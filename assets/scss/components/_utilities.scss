@@ -1,0 +1,21 @@
+.m-normal-spacing {
+	padding: $normal-spacing;
+}
+
+// Background
+.m-bg-highlight-tb {
+	background: $primary-color;
+	background: -webkit-linear-gradient(to bottom, $primary-color-light, $primary-color);
+	background: linear-gradient(to bottom, $primary-color-light, $primary-color);
+}
+
+.m-bg-white-tb {
+	background: $white;
+	background: -webkit-linear-gradient(to bottom, rgba($white, 0), $white);
+	background: linear-gradient(to bottom, rgba($white, 0), $white);
+}
+.m-bg-white-bt {
+	background: $white;
+	background: -webkit-linear-gradient(to top, rgba($white, 0), $white);
+	background: linear-gradient(to top, rgba($white, 0), $white);
+}

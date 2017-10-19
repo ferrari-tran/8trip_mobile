@@ -1,0 +1,22 @@
+.m-formsearch {
+	margin-top: $normal-spacing;
+}
+.m-formsearch-place {
+	padding-left: $large-spacing;	
+	position: relative;
+	z-index: 0;
+	.m-toggle-place {
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+.m-input-hiding.uk-input {
+	border: none;
+	border-radius: 0;
+	background: transparent;
+	padding-left: 0;
+	padding-right: 0;
+	font-size: $font-size-title;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=500, maximum-scale=1">
+	<title>Form search</title>
+
+	<!-- Framework UI Kit -->
+	<link rel="stylesheet" href="assets/vendor/uikit/css/uikit.min.css">
+	<link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body>
+	
+	<div class="m-wrapper">
+		<form>
+			<div class="m-bg-highlight-tb">
+
+
+				<nav class="uk-navbar-container uk-navbar-transparent uk-light" uk-navbar>
+					<div class="uk-navbar-left">
+						<a class="uk-navbar-toggle" uk-icon="icon: arrow-left" href="#"></a>
+					</div>
+
+					<div class="uk-navbar-center"><h5 class="m-title-page">Đặt vé máy bay</h5></div>
+
+					<div class="uk-navbar-right">
+						<a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#"></a>
+					</div>
+				</nav>
+				<!-- End nav -->
+
+
+				<section class="m-formsearch uk-light">
+					<div class="uk-container">
+						<div class="m-formsearch-place">
+							<div class="m-group-text-media">
+								<p class="uk-text-small">Điểm đi</p>
+								<input type="text" placeholder="Chạm để chọn điểm đi" class="m-input-hiding uk-input"  data-ref="from-place-1">
+								<p class="uk-text-small">HAN</p>
+							</div>
+
+							<div class="m-group-text-media">
+								<p class="uk-text-small">Điểm đến</p>
+								<input type="text" placeholder="Chạm để chọn điểm đến" class="m-input-hiding uk-input"  data-ref="to-place-1">
+								<p class="uk-text-small">SGN</p>
+							</div>
+
+							<div class="m-toggle-place"><button class="m-btn-switch m-btn-switch-line" data-target-1="to-place-1" data-target-2="from-place-1"><img src="assets/images/ic_arrow_left_right.svg" alt="icon"></button></div>
+						</div>
+					</div>
+				</section>
+
+
+
+			</div>
+		</form>
+
+	</div>
+
+
+	<!-- Script -->
+	<script src="assets/vendor/jquery.min.js"></script>
+	<script src="assets/vendor/uikit/js/uikit.min.js"></script>
+	<script src="assets/vendor/uikit/js/uikit-icons.min.js"></script>
+	<script src="assets/js/main.js"></script>
+	
+</body>
+</html>
