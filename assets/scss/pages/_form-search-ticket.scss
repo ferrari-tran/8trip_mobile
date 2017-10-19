@@ -3,6 +3,15 @@
 	.m-double-radio {
 		top: 30px;
 	}
+	.uk-light {
+		.uk-input {
+			color: $white;
+		}
+	}
+	.m-double-radio {
+		width: 76%;
+		margin: 0 12%;
+	}
 }
 .m-formsearch-place {
 	padding-left: $large-spacing;

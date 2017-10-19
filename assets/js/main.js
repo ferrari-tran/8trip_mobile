@@ -23,13 +23,73 @@ $(document).ready(function() {
 	if (gRadio.length > 0) {
 		var bar = $(gRadio).find('.m-double-radio-bar');
 
-		$('[name=round_way]').on('change', function(e) {
+		$('input[type=radio]').on('change', function(e) {
 			var label = $(e.currentTarget).parent();
+			$(gRadio).find('label').toggleClass('active');
+
 			if ($(label).index() === 0) {
 				$(bar).css('left', '0');
 			} else {
 				$(bar).css('left', '50%');
 			}
+		});
+	}
+});
+
+// Customize input number
+(function() {
+  window.inputNumber = function(el) {
+
+    var min = el.attr('min') || false;
+    var max = el.attr('max') || false;
+
+    var els = {};
+
+    els.dec = el.prev();
+    els.inc = el.next();
+
+    el.each(function() {
+      init($(this));
+    });
+
+    function init(el) {
+
+      els.dec.on('click', decrement);
+      els.inc.on('click', increment);
+
+      function decrement() {
+        var value = el[0].value;
+        value--;
+        if(!min || value >= min) {
+          el[0].value = value;
+        }
+      }
+
+      function increment() {
+        var value = el[0].value;
+        value++;
+        if(!max || value <= max) {
+          el[0].value = value++;
+        }
+      }
+    }
+  }
+})();
+
+$(document).ready(function() {
+	$('.m-input-number').each(function(index, input) {
+		inputNumber($(input));
+	});
+});
+
+// Toggle round trip in form
+$(document).ready(function() {
+	var toggle = $('input[name=round_trip]');
+	if(toggle.length > 0) {
+		$(toggle).on('change', function() {
+			var value = $(this).val();
+			var target = $(this).data('target');
+			value === '1 chiều' ? $('[data-ref="' + target + '"]').slideUp() : $('[data-ref="' + target + '"]').slideDown();
 		});
 	}
 });

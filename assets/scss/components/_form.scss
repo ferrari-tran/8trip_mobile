@@ -4,9 +4,10 @@
   vertical-align: top;
   text-align: center;
   outline: none;
-  height: 24px;
+  height: 28px;
   user-select: none;
   border: none;
+  font-size: 0.875rem;
 }
 
 .m-input-number-decrement,
@@ -21,6 +22,7 @@
   color: $text-color;
   text-align: center;
   cursor: pointer;
+  font-size: 10px;
 }
 .m-input-number-decrement:active,
 .m-input-number-increment:active {

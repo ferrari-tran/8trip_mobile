@@ -2,10 +2,6 @@
 	height: 60px;
 }
 
-.uk-form-label {
-	margin-bottom: 10px !important;
-}
-
 // Form
 
 .uk-light {
@@ -19,6 +15,10 @@
 	border-left: none;
 	border-right:none;
 	padding: 0;
+}
+
+.uk-button {
+	border-radius: 100px;
 }
 
 // Navbar
