@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=500, maximum-scale=1">
+	<meta name="viewport" content="width=480, maximum-scale=1">
 	<title>Form search</title>
 
 	<!-- Framework UI Kit -->
@@ -11,11 +11,10 @@
 	<link rel="stylesheet" href="assets/css/style.min.css">
 </head>
 <body>
-	
+
 	<div class="m-wrapper">
 		<form>
 			<div class="m-bg-highlight-tb">
-
 
 				<nav class="uk-navbar-container uk-navbar-transparent uk-light" uk-navbar>
 					<div class="uk-navbar-left">
@@ -35,24 +34,60 @@
 					<div class="uk-container">
 						<div class="m-formsearch-place">
 							<div class="m-group-text-media">
-								<p class="uk-text-small">Điểm đi</p>
-								<input type="text" placeholder="Chạm để chọn điểm đi" class="m-input-hiding uk-input"  data-ref="from-place-1">
-								<p class="uk-text-small">HAN</p>
+								<p class="">Điểm đi</p>
+								<input type="text" placeholder="Hà Nội (HAN)" class="m-input-hiding uk-input"  data-ref="from-place-1">
+								<!-- <p class="uk-text-small">Chạm để chọn điểm đi</p> -->
 							</div>
 
 							<div class="m-group-text-media">
-								<p class="uk-text-small">Điểm đến</p>
-								<input type="text" placeholder="Chạm để chọn điểm đến" class="m-input-hiding uk-input"  data-ref="to-place-1">
-								<p class="uk-text-small">SGN</p>
+								<p class="">Điểm đến</p>
+								<input type="text" placeholder="Hồ Chí Minh (SGN)" class="m-input-hiding uk-input"  data-ref="to-place-1">
+								<!-- <p class="uk-text-small">Chạm để chọn điểm đến</p> -->
 							</div>
 
 							<div class="m-toggle-place"><button class="m-btn-switch m-btn-switch-line" data-target-1="to-place-1" data-target-2="from-place-1"><img src="assets/images/ic_arrow_left_right.svg" alt="icon"></button></div>
 						</div>
+
+						<fieldset class="uk-fieldset">
+							<div class="m-double-radio">
+								<label><input type="radio" name="round_way" class="uk-radio">1 chiều</label>
+								<label><input type="radio" name="round_way" class="uk-radio" checked>Khứ hồi</label>
+								<span class="m-double-radio-bar"></span>
+							</div>
+						</fieldset>
 					</div>
 				</section>
 
+			</div>
+
+			<div class="uk-padding-small uk-margin-top">
+				<div class="uk-card-small uk-card-default uk-padding-small uk-margin-bottom">
+					<div class="uk-flex">
+						<div class="uk-width-1-2">
+							<label class="uk-form-label">Ngày đi</label>
+			        <div class="uk-form-controls">
+			          <input class="uk-input" type="text" placeholder="01/10/2017">
+			        </div>
+						</div>
+						<div class="uk-width-1-2 uk-margin-small-left">
+							<label class="uk-form-label">Ngày về</label>
+			        <div class="uk-form-controls">
+			          <input class="uk-input" type="text" placeholder="01/10/2017">
+			        </div>
+						</div>
+					</div>
+				</div>
 
 
+				<div class="uk-card-small uk-card-default uk-padding-small">
+					<label class="uk-form-label">Hạng ghế</label>
+					<div class="uk-form-controls">
+            <select class="uk-select">
+                <option>Economy - phổ thông</option>
+                <option>Business - Thương gia</option>
+            </select>
+        </div>
+				</div>
 			</div>
 		</form>
 
@@ -64,6 +99,5 @@
 	<script src="assets/vendor/uikit/js/uikit.min.js"></script>
 	<script src="assets/vendor/uikit/js/uikit-icons.min.js"></script>
 	<script src="assets/js/main.js"></script>
-	
 </body>
 </html>

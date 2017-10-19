@@ -19,3 +19,13 @@
 	background: -webkit-linear-gradient(to top, rgba($white, 0), $white);
 	background: linear-gradient(to top, rgba($white, 0), $white);
 }
+
+// Other
+.m-transition {
+	transition: all 0.2s ease-in-out;
+}
+
+// Shadow
+.m-shadow-300 {
+	box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}

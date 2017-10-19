@@ -1,8 +1,11 @@
 .m-formsearch {
 	margin-top: $normal-spacing;
+	.m-double-radio {
+		margin-bottom: -20px;
+	}
 }
 .m-formsearch-place {
-	padding-left: $large-spacing;	
+	padding-left: $large-spacing;
 	position: relative;
 	z-index: 0;
 	.m-toggle-place {

@@ -5,6 +5,7 @@
 	width: 30px;
 	height: 30px;
 	outline: none;
+	cursor: pointer;
 
 	&.m-btn-switch-line {
 		position: relative;
@@ -33,5 +34,47 @@
 
 	img {
 		width: 16px;
+	}
+}
+
+/**
+ * Radio
+ */
+.m-double-radio {
+	display: flex;
+	background: $gray;
+	border-radius: 20px;
+	width: 70%;
+	margin: 0 15%;
+	position: relative;
+	z-index: 0;
+
+	> label {
+		flex: 0 0 50%;
+		height: 40px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: $text-color;
+		cursor: pointer;
+
+		> input[type=radio] {
+			opacity: 0;
+			width: 0;
+			height: 0;
+		}
+	}
+
+	&-bar {
+		position: absolute;
+		width: 50%;
+		height: 100%;
+		left: 50%;
+		top: 0;
+		background: $secondary-color;
+		border-radius: 20px;
+		z-index: -1;
+
+		@extend .m-transition;
 	}
 }
