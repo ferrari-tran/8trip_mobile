@@ -6,6 +6,21 @@
 	margin-bottom: 10px !important;
 }
 
+// Form
+
+.uk-light {
+	input {
+		color: $white;
+	}
+}
+
+.uk-input, .uk-select {
+	border-top: none;
+	border-left: none;
+	border-right:none;
+	padding: 0;
+}
+
 // Navbar
 .uk-navbar-container {
 	.m-title-page {

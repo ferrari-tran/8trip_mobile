@@ -42,12 +42,11 @@
  */
 .m-double-radio {
 	display: flex;
-	background: $gray;
+	background: $white;
 	border-radius: 20px;
-	width: 70%;
-	margin: 0 15%;
 	position: relative;
 	z-index: 0;
+	@extend .m-shadow-300;
 
 	> label {
 		flex: 0 0 50%;

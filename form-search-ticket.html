@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=480, maximum-scale=1">
+	<meta name="viewport" content="width=414, maximum-scale=1">
 	<title>Form search</title>
 
 	<!-- Framework UI Kit -->
@@ -21,7 +21,7 @@
 						<a class="uk-navbar-toggle" uk-icon="icon: arrow-left" href="#"></a>
 					</div>
 
-					<div class="uk-navbar-center"><h5 class="m-title-page">Đặt vé máy bay</h5></div>
+					<div class="uk-navbar-center"><h4 class="m-title-page">Đặt vé máy bay</h4></div>
 
 					<div class="uk-navbar-right">
 						<a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#"></a>
@@ -31,7 +31,7 @@
 
 
 				<section class="m-formsearch uk-light">
-					<div class="uk-container">
+					<div class="uk-padding-small">
 						<div class="m-formsearch-place">
 							<div class="m-group-text-media">
 								<p class="">Điểm đi</p>
@@ -61,6 +61,7 @@
 			</div>
 
 			<div class="uk-padding-small uk-margin-top">
+
 				<div class="uk-card-small uk-card-default uk-padding-small uk-margin-bottom">
 					<div class="uk-flex">
 						<div class="uk-width-1-2">
@@ -79,14 +80,44 @@
 				</div>
 
 
-				<div class="uk-card-small uk-card-default uk-padding-small">
+				<div class="uk-card-small uk-card-default uk-padding-small uk-margin-bottom">
 					<label class="uk-form-label">Hạng ghế</label>
 					<div class="uk-form-controls">
-            <select class="uk-select">
-                <option>Economy - phổ thông</option>
-                <option>Business - Thương gia</option>
-            </select>
-        </div>
+	          <select class="uk-select">
+	            <option>Economy - phổ thông</option>
+	            <option>Business - Thương gia</option>
+	          </select>
+	        </div>
+				</div>
+
+				<div class="uk-card-small uk-card-default uk-padding-small uk-flex">
+					<div class="uk-width-1-3">
+						<label class="uk-form-label">Người lớn</label>
+						<div>
+							<span class="m-input-number-decrement">–</span>
+							<input class="m-input-number" type="text" value="1" min="0" max="10">
+							<span class="m-input-number-increment">+</span>
+						</div>
+					</div>
+
+					<div class="uk-width-1-3 uk-margin-small-left">
+						<label class="uk-form-label">Trẻ em</label>
+						<div>
+							<span class="m-input-number-decrement">–</span>
+							<input class="m-input-number" type="text" value="1" min="0" max="10">
+							<span class="m-input-number-increment">+</span>
+						</div>
+					</div>
+
+					<div class="uk-width-1-3 uk-margin-small-left">
+						<label class="uk-form-label">Em bé</label>
+						<div>
+							<span class="m-input-number-decrement">–</span>
+							<input class="m-input-number" type="text" value="1" min="0" max="10">
+							<span class="m-input-number-increment">+</span>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</form>

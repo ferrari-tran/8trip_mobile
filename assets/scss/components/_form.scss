@@ -1,0 +1,28 @@
+.m-input-number {
+  width: 30px;
+  padding: 0 12px;
+  vertical-align: top;
+  text-align: center;
+  outline: none;
+  height: 24px;
+  user-select: none;
+  border: none;
+}
+
+.m-input-number-decrement,
+.m-input-number-increment {
+  border: 1px solid $border-color;
+  height: 16px;
+  user-select: none;
+  display: inline-block;
+  width: 16px;
+  line-height: 14px;
+  background: $white;
+  color: $text-color;
+  text-align: center;
+  cursor: pointer;
+}
+.m-input-number-decrement:active,
+.m-input-number-increment:active {
+  background: $gray-light;
+}
