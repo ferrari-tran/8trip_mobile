@@ -36,6 +36,16 @@ $(document).ready(function() {
 	}
 });
 
+// Tab
+$(document).ready(function() {
+	var switcher = UIkit.switcher($('.uk-switcher'), {
+		active: 0,
+		connect: true,
+		swiping: true,
+		animation: 'slide-left-small'
+	});
+});
+
 // Customize input number
 (function() {
   window.inputNumber = function(el) {
