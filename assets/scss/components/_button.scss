@@ -85,3 +85,25 @@
 		@extend .m-transition;
 	}
 }
+
+.m-button-secondary {
+	background: $secondary-color;
+	color: $white;
+	&:hover {
+		background: $secondary-color-light;
+		color: $black;
+	}
+	&:active, &:visited {
+		background: $secondary-color-dark;
+	}
+}
+
+.m-button-accent-outline {
+	border: solid 1px $accent-color;
+	color: $accent-color;
+	background: transparent;
+	&::hover {
+		background: $accent-color-light;
+		color: $white;
+	}
+}

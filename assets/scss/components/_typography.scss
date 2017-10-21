@@ -10,7 +10,22 @@
 .m-text-caption {
 
 }
-
+.m-text-bold {
+	font-weight: $font-weight-bold;
+}
+.m-text-center {
+	text-align: center;
+}
+.m-text-right {
+	text-align: right;
+}
+// Text color
+.m-text-secondary {
+	color: $secondary-color;
+}
+.m-text-highlight {
+	color: $accent-color;
+}
 // Component with text
 .m-group-text-media {
 	margin-bottom: $normal-spacing;
