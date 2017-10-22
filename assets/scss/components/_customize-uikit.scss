@@ -21,6 +21,10 @@
 	border-radius: 100px;
 }
 
+form label {
+	color: $text-hint;
+}
+
 // Navbar
 .uk-navbar-container {
 	.m-title-page {

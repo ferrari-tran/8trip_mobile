@@ -103,3 +103,24 @@ $(document).ready(function() {
 		});
 	}
 });
+
+// Booking
+$(document).ready(function() {
+	$('.m-button-booking[data-booking="departure-flight"]').click(function(e) {
+		e.preventDefault();
+		var switcher = $('#m-booking-switcher');
+		var departureTab = $(switcher).children()[0];
+		$(departureTab).find('.m-result-list').hide();
+
+		var result = $(departureTab).find('.m-ticket-chosen');
+		// Trước khi show ra thì set lại các thông tin bên trong.
+		// do something...
+		$(result).toggle();
+
+
+		// Close modal
+		var modal = $(e.target).closest('[uk-modal]');
+		UIkit.modal(modal).hide();
+		UIkit.switcher(switcher).show(2);
+	});
+});

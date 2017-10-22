@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=414, maximum-scale=1">
+	<title>Form booking</title>
+
+	<!-- Framework UI Kit -->
+	<link rel="stylesheet" href="assets/vendor/uikit/css/uikit.min.css">
+	<link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body>
+
+	<div class="m-wrapper uk-offcanvas-content">
+		<form class="m-form">
+			<div class="m-bg-highlight-tb">
+				<nav class="uk-navbar-container uk-navbar-transparent uk-light" uk-navbar>
+					<div class="uk-navbar-left">
+						<a class="uk-icon-link" uk-icon="icon: arrow-left; ratio: 2" href="#"></a>
+					</div>
+
+					<div class="uk-navbar-center"><h4 class="m-title-page">Thông tin hành khách</h4></div>
+
+					<div class="uk-navbar-right">
+						<a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-icon="ratio: 2"  uk-toggle="target: #mainSidebar"></a>
+					</div>
+				</nav>
+				<!-- End nav -->
+			</div>
+
+			<aside id="mainSidebar" uk-offcanvas="overlay: true; flip: true; mode: slide;">
+				<div class="uk-offcanvas-bar">
+
+					<button class="uk-offcanvas-close" type="button" uk-close></button>
+
+					<h3>Sidebar is here</h3>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+				</div>
+			</aside>
+			<!-- End #mainSidebar -->
+
+			<section class="uk-padding-small m-result-list">
+
+				<div class="uk-alert-warning uk-margin" uk-alert>Bạn vui lòng <a href="#">Đăng nhập</a> để lấy thông tin hành khách hoặc điền vào form dưới đây. Nếu bạn chưa có tài khoản, đăng ký tại đây.</div>
+
+				<form uk-form>
+					<fieldset class="uk-fieldset uk-margin">
+						<legend class="uk-legend">1. Người liên hệ</legend>
+						<div class="uk-card uk-margin uk-grid-small" uk-grid>
+							<div class="uk-width-1-1">
+								<label class="uk-margin-remove uk-text-small">Họ và tên:</label>
+								<input type="text" class="uk-input">
+							</div>
+							<div class="uk-width-1-1">
+								<label class="uk-margin-remove uk-text-small">Email:</label>
+								<input type="email" class="uk-input">
+							</div>
+							<div class="uk-width-1-1">
+								<label class="uk-margin-remove uk-text-small">Số điện thoại:</label>
+								<input type="text" class="uk-input">
+							</div>
+						</div>
+					</fieldset>
+
+					<fieldset class="uk-fieldset">
+						<legend class="uk-legend">2. Hành khách</legend>
+						<div class="uk-card uk-margin uk-margin-medium-bottom">
+							<p class="uk-label m-label-secondary">Người lớn 1</p>
+							<div class="uk-grid-small" uk-grid>
+								<div class="uk-width-1-1">
+									<label class="uk-margin-remove uk-text-small">Họ và tên:</label>
+									<input type="text" class="uk-input">
+								</div>
+								<div class="uk-width-2-3">
+									<label class="uk-margin-remove uk-text-small">Số điện thoại:</label>
+									<input type="text" class="uk-input">
+								</div>
+								<div class="uk-width-1-3">
+									<label class="uk-margin-remove uk-text-small">Giới tính:</label>
+									<select class="uk-select">
+										<option value="Nam">Nam</option>
+										<option value="Nữ">Nữ</option>
+										<option value="Khác">Khác</option>
+									</select>
+								</div>
+								<div class="uk-width-1-1">
+									<label class="uk-margin-remove uk-text-small">Hành lý ký gửi lượt đi (HAN → LHR):</label>
+									<select class="uk-select">
+										<option value="0kg">0kg - 0 VND</option>
+										<option value="20kg">20kg - 150.000 VND</option>
+									</select>
+								</div>
+								<div class="uk-width-1-1">
+									<label class="uk-margin-remove uk-text-small">Hành lý ký gửi lượt về (HAN → LHR):</label>
+									<select class="uk-select">
+										<option value="0kg">0kg - 0 VND</option>
+										<option value="20kg">20kg - 150.000 VND</option>
+									</select>
+								</div>
+							</div>
+						</div>
+
+						<div class="uk-card uk-margin uk-margin-medium-bottom">
+							<p class="uk-label m-label-secondary">Em bé 1</p>
+							<div class="uk-grid-small" uk-grid>
+								<div class="uk-width-1-1">
+									<label class="uk-margin-remove uk-text-small">Họ và tên:</label>
+									<input type="text" class="uk-input">
+								</div>
+								<div class="uk-width-1-1">
+									<label class="uk-margin-remove uk-text-small">Ngày sinh:</label>
+									<input type="date" class="uk-input">
+								</div>
+							</div>
+						</div>
+					</fieldset>
+				</form>
+
+				<div class="uk-flex uk-flex-center uk-flex-middle uk-margin">
+					<button class="uk-button uk-button-primary">Tiếp tục</button>
+				</div>
+			</section>
+		</form>
+
+	</div>
+
+
+	<!-- Script -->
+	<script src="assets/vendor/jquery.min.js"></script>
+	<script src="assets/vendor/uikit/js/uikit.min.js"></script>
+	<script src="assets/vendor/uikit/js/uikit-icons.min.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
