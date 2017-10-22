@@ -21,10 +21,10 @@
 }
 // Text color
 .m-text-secondary {
-	color: $secondary-color;
+	color: $secondary-color !important;
 }
 .m-text-highlight {
-	color: $accent-color;
+	color: $accent-color !important;
 }
 // Component with text
 .m-group-text-media {

@@ -1,0 +1,22 @@
+.uk-modal {
+	table {
+		tr {
+			> th, > td {
+				&:first-child {
+					padding-left: 0;
+				}
+				&:last-child {
+					padding-right: 0;
+				}
+			}
+		}
+	}
+}
+
+.m-table-info {
+	tr {
+		> th, > td {
+			padding: 5px;
+		}
+	}
+}

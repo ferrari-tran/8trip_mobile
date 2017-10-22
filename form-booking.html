@@ -46,7 +46,7 @@
 
 				<div class="uk-alert-warning uk-margin" uk-alert>Bạn vui lòng <a href="#">Đăng nhập</a> để lấy thông tin hành khách hoặc điền vào form dưới đây. Nếu bạn chưa có tài khoản, đăng ký tại đây.</div>
 
-				<form uk-form>
+				<div>
 					<fieldset class="uk-fieldset uk-margin">
 						<legend class="uk-legend">1. Người liên hệ</legend>
 						<div class="uk-card uk-margin uk-grid-small" uk-grid>
@@ -117,15 +117,153 @@
 							</div>
 						</div>
 					</fieldset>
-				</form>
+				</div>
 
 				<div class="uk-flex uk-flex-center uk-flex-middle uk-margin">
-					<button class="uk-button uk-button-primary">Tiếp tục</button>
+					<button class="uk-button uk-button-primary" uk-toggle="target: #modal-confirm" type="button">Tiếp tục</button>
 				</div>
 			</section>
 		</form>
 
 	</div>
+
+
+	<!-- Popup confirm -->
+	<section id="modal-confirm" uk-modal class="uk-modal-full">
+		<div class="uk-modal-dialog uk-background-primary uk-light">
+			<div class="uk-modal-body">
+				<button class="uk-modal-close-default" type="button" uk-close></button>
+				<h3 class="uk-tittle uk-text-center">Xác nhận thông tin đăng ký</h3>
+
+				<div class="uk-card uk-card-small">
+					<h4 class="uk-heading-bullet">Chiều đi</h4>
+
+					<div class="uk-flex uk-flex-middle uk-margin">
+						<div class="uk-flex uk-flex-column uk-width-1-3">
+							<span class="uk-h2 uk-margin-remove">HAN</span>
+							<span class="uk-text-meta">Hà Nội - Việt Nam</span>
+						</div>
+						<div class="uk-flex uk-flex-column uk-flex-middle uk-width-1-3">
+							<img src="assets/images/brand_vna.png" alt="icon" class="m-brand-small uk-margin-small-bottom">
+							<span class="uk-text-meta">T6, 20/10/2017</span>
+						</div>
+						<div class="uk-flex uk-flex-column m-text-right uk-width-1-3">
+							<span class="uk-h2 uk-margin-remove">LHR</span>
+							<span class="uk-text-meta">London - Anh</span>
+						</div>
+					</div>
+
+					<div class="uk-flex uk-flex-middle uk-margin">
+						<div class="uk-flex uk-flex-column uk-width-1-3">
+							<span class="uk-h3 uk-margin-remove">18:00</span>
+							<span class="uk-text-meta">SB Nội Bài</span>
+						</div>
+						<div class="uk-flex uk-flex-column uk-flex-middle uk-width-1-3">
+							<span class="uk-text-small">20h 35m</span>
+							<span class="uk-text-meta">2 điểm dừng</span>
+						</div>
+						<div class="uk-flex uk-flex-column m-text-right uk-width-1-3">
+							<span class="uk-h3 uk-margin-remove">16:00</span>
+							<span class="uk-text-meta">SB Heathrow</span>
+						</div>
+					</div>
+
+					<table class="uk-table uk-table-small uk-table-middle m-table-info">
+						<tr>
+							<td class="uk-text-left">Hãng bay:</td>
+							<td class="uk-text-right">Vietnam Airline</td>
+						</tr>
+						<tr>
+							<td class="uk-text-left">Số hiệu:</td>
+							<td class="uk-text-right">VN-193</td>
+						</tr>
+						<tr>
+							<td class="uk-text-left">Số người:</td>
+							<td class="uk-text-right">1 người lớn</td>
+						</tr>
+						<tr>
+							<td class="uk-text-left">Hành lý ký gửi:</td>
+							<td class="uk-text-right">27kg</td>
+						</tr>
+						<tr>
+							<td class="uk-text-left">Giá vé:<br><span class="uk-text-small">Gồm thuế và phụ phí</span></td>
+							<td class="uk-text-right uk-h4 uk-margin-remove">15.000.000 VND</td>
+						</tr>
+					</table>
+				</div>
+
+				<hr>
+
+				<div class="uk-card uk-card-small">
+					<h4 class="uk-heading-bullet">Chiều về</h4>
+
+					<div class="uk-flex uk-flex-middle uk-margin">
+						<div class="uk-flex uk-flex-column uk-width-1-3">
+							<span class="uk-h2 uk-margin-remove">LHR</span>
+							<span class="uk-text-meta">London - Anh</span>
+						</div>
+						<div class="uk-flex uk-flex-column uk-flex-middle uk-width-1-3">
+							<img src="assets/images/brand_vna.png" alt="icon" class="m-brand-small uk-margin-small-bottom">
+							<span class="uk-text-meta">T6, 20/10/2017</span>
+						</div>
+						<div class="uk-flex uk-flex-column m-text-right uk-width-1-3">
+							<span class="uk-h2 uk-margin-remove">HAN</span>
+							<span class="uk-text-meta">Hà Nội - Việt Nam</span>
+						</div>
+					</div>
+
+					<div class="uk-flex uk-flex-middle uk-margin">
+						<div class="uk-flex uk-flex-column uk-width-1-3">
+							<span class="uk-h3 uk-margin-remove">18:00</span>
+							<span class="uk-text-meta">SB Heathrow</span>
+						</div>
+						<div class="uk-flex uk-flex-column uk-flex-middle uk-width-1-3">
+							<span class="uk-text-small">20h 35m</span>
+							<span class="uk-text-meta">2 điểm dừng</span>
+						</div>
+						<div class="uk-flex uk-flex-column m-text-right uk-width-1-3">
+							<span class="uk-h3 uk-margin-remove">16:00</span>
+							<span class="uk-text-meta">SB Nội Bài</span>
+						</div>
+					</div>
+
+					<table class="uk-table uk-table-small uk-table-middle m-table-info">
+						<tr>
+							<td class="uk-text-left">Hãng bay:</td>
+							<td class="uk-text-right">Vietnam Airline</td>
+						</tr>
+						<tr>
+							<td class="uk-text-left">Số hiệu:</td>
+							<td class="uk-text-right">VN-193</td>
+						</tr>
+						<tr>
+							<td class="uk-text-left">Số người:</td>
+							<td class="uk-text-right">1 người lớn</td>
+						</tr>
+						<tr>
+							<td class="uk-text-left">Hành lý ký gửi:</td>
+							<td class="uk-text-right">27kg</td>
+						</tr>
+						<tr>
+							<td class="uk-text-left">Giá vé:<br><span class="uk-text-small">Gồm thuế và phụ phí</span></td>
+							<td class="uk-text-right uk-h4 uk-margin-remove">15.000.000 VND</td>
+						</tr>
+					</table>
+				</div>
+
+				<hr>
+
+				<div class="uk-margin uk-text-center">
+					<p class="uk-margin-remove">Tổng giá vé 2 chiều:</p>
+					<p class="uk-h2 m-text-secondary uk-margin-remove">30.000.000 VND</p>
+				</div>
+
+				<div class="uk-margin uk-text-center">
+					<button class="uk-button uk-button-default">Đặt vé</button>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
 	<!-- Script -->
