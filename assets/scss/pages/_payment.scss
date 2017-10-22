@@ -1,0 +1,8 @@
+.m-payment-list {
+	.m-payment {
+		cursor: pointer;
+		&:not(:last-child) {
+			border-bottom: solid 1px $border-color;
+		}
+	}
+}
