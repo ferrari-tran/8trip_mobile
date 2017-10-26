@@ -44,7 +44,7 @@
 
 			<section class="m-payment-list">
 
-				<article class="m-payment uk-padding-small uk-visible-toggle">
+				<article class="m-payment uk-padding-small uk-visible-toggle" uk-toggle="target: #modal-confirm" type="button">
 					<div class="m-payment-header uk-position-relative">
 						<div class="uk-grid-medium uk-flex-middle" uk-grid>
 							<div class="uk-width-auto">
@@ -58,7 +58,7 @@
 					</div>
 				</article>
 
-				<article class="m-payment uk-padding-small uk-visible-toggle">
+				<article class="m-payment uk-padding-small uk-visible-toggle" uk-toggle="target: #modal-confirm" type="button">
 					<div class="m-payment-header uk-position-relative">
 						<div class="uk-grid-medium uk-flex-middle" uk-grid>
 							<div class="uk-width-auto">
@@ -72,7 +72,7 @@
 					</div>
 				</article>
 
-				<article class="m-payment uk-padding-small uk-visible-toggle">
+				<article class="m-payment uk-padding-small uk-visible-toggle" uk-toggle="target: #modal-confirm" type="button">
 					<div class="m-payment-header uk-position-relative">
 						<div class="uk-grid-medium uk-flex-middle" uk-grid>
 							<div class="uk-width-auto">
@@ -86,7 +86,7 @@
 					</div>
 				</article>
 
-				<article class="m-payment uk-padding-small uk-visible-toggle">
+				<article class="m-payment uk-padding-small uk-visible-toggle" uk-toggle="target: #modal-confirm" type="button">
 					<div class="m-payment-header uk-position-relative">
 						<div class="uk-grid-medium uk-flex-middle" uk-grid>
 							<div class="uk-width-auto">
@@ -100,7 +100,7 @@
 					</div>
 				</article>
 
-				<article class="m-payment uk-padding-small uk-visible-toggle">
+				<article class="m-payment uk-padding-small uk-visible-toggle" uk-toggle="target: #modal-confirm" type="button">
 					<div class="m-payment-header uk-position-relative">
 						<div class="uk-grid-medium uk-flex-middle" uk-grid>
 							<div class="uk-width-auto">
@@ -116,8 +116,85 @@
 
 			</section>
 		</form>
-
 	</div>
+
+	<!-- Dialog detail -->
+	<section id="modal-confirm" uk-modal class="uk-modal-full">
+		<div class="uk-modetailalog uk-background-primary uk-light">
+			<div class="uk-modal-body">
+				<button class="uk-modal-close-default" type="button" uk-close></button>
+				<h3 class="uk-tittle uk-text-center">Chi tiết vé đã đặt</h3>
+
+				<div class="uk-flex uk-flex-between">
+					<span class="uk-text-bold">Mã đặt chỗ</span>
+					<span class="uk-text-bold uk-text-large uk-h3 m-text-secondary uk-margin-remove">123456</span>
+				</div>
+
+				<hr>
+
+				<div class="uk-card uk-card-small">
+					<h4 class="uk-heading-bullet">Các chuyến bay đã đặt</h4>
+
+					<div class="uk-flex uk-flex-middle uk-margin">
+						<div class="uk-flex uk-flex-column uk-width-1-3">
+							<span class="uk-h2 uk-margin-remove">HAN</span>
+							<span class="uk-text-meta">Hà Nội - Việt Nam</span>
+						</div>
+						<div class="uk-flex uk-flex-column uk-flex-middle uk-width-1-3">
+							<img src="assets/images/brand_vna.png" alt="icon" class="m-brand-small uk-margin-small-bottom">
+							<span class="uk-text-bold">VN-195</span>
+							<span class="uk-text-meta">T6, 20/10/2017</span>
+						</div>
+						<div class="uk-flex uk-flex-column m-text-right uk-width-1-3">
+							<span class="uk-h2 uk-margin-remove">LHR</span>
+							<span class="uk-text-meta">London - Anh</span>
+						</div>
+					</div>
+
+					<div class="uk-flex uk-flex-middle uk-margin">
+						<div class="uk-flex uk-flex-column uk-width-1-3">
+							<span class="uk-h2 uk-margin-remove">LHR</span>
+							<span class="uk-text-meta">London - Anh</span>
+						</div>
+						
+						<div class="uk-flex uk-flex-column uk-flex-middle uk-width-1-3">
+							<img src="assets/images/brand_vna.png" alt="icon" class="m-brand-small uk-margin-small-bottom">
+							<span class="uk-text-bold">VN-195</span>
+							<span class="uk-text-meta">T4, 25/10/2017</span>
+						</div>
+
+						<div class="uk-flex uk-flex-column m-text-right uk-width-1-3">
+							<span class="uk-h2 uk-margin-remove">HAN</span>
+							<span class="uk-text-meta">Hà Nội - Việt Nam</span>
+						</div>
+					</div>
+				</div>
+
+				<hr>
+
+				<div class="uk-card uk-card-small">
+					<h4 class="uk-heading-bullet">Danh sách hành khách</h4>
+
+					<ol>
+						<li>Bà Trần Phương Thuỷ</li>
+						<li>Bà Trần Phương Thuỷ</li>
+						<li>Bà Trần Phương Thuỷ</li>
+					</ol>
+				</div>
+
+				<hr>
+
+				<div class="uk-margin uk-text-center">
+					<p class="uk-margin-remove">Tổng giá vé 2 chiều:</p>
+					<p class="uk-h2 m-text-secondary uk-margin-remove">30.000.000 VND</p>
+				</div>
+
+				<div class="uk-margin uk-text-center">
+					<button class="uk-button uk-button-default">Đặt vé</button>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
 	<!-- Script -->

@@ -71,71 +71,75 @@
 			</aside>
 			<!-- End #mainSidebar -->
 
-			<div class="uk-padding-small uk-margin-top">
-				<div class="uk-card-small uk-card-default uk-padding-small uk-margin-bottom">
-					<div class="uk-flex">
-						<div class="uk-width-1-2">
-							<label class="uk-form-label">Ngày đi</label>
-							<div class="uk-form-controls">
-							  <input class="uk-input" type="text" value="01/10/2017">
+			<section class="uk-padding-muted">
+
+				<div class="uk-padding-small uk-margin-top">
+					<div class="uk-card-small uk-card-default uk-padding-small uk-margin-bottom">
+						<div class="uk-flex">
+							<div class="uk-width-1-2">
+								<label class="uk-form-label">Ngày đi</label>
+								<div class="uk-form-controls">
+								  <input class="uk-input" type="text" value="01/10/2017">
+								</div>
+							</div>
+							<div class="uk-width-1-2 uk-margin-small-left" data-ref="to-date-search">
+								<label class="uk-form-label">Ngày về</label>
+								<div class="uk-form-controls">
+								  <input class="uk-input" type="text" value="01/10/2017">
+								</div>
 							</div>
 						</div>
-						<div class="uk-width-1-2 uk-margin-small-left" data-ref="to-date-search">
-							<label class="uk-form-label">Ngày về</label>
-							<div class="uk-form-controls">
-							  <input class="uk-input" type="text" value="01/10/2017">
+					</div>
+
+
+					<div class="uk-card-small uk-card-default uk-padding-small uk-margin-bottom">
+						<div class="uk-flex">
+							<label class="uk-form-label uk-flex uk-flex-middle uk-width-1-2">Hạng ghế</label>
+							<div class="uk-form-controls uk-width-1-2">
+							  <select class="uk-select">
+								<option>Phổ thông</option>
+								<option>Thương gia</option>
+							  </select>
 							</div>
 						</div>
 					</div>
-				</div>
 
-
-				<div class="uk-card-small uk-card-default uk-padding-small uk-margin-bottom">
-					<div class="uk-flex">
-						<label class="uk-form-label uk-flex uk-flex-middle uk-width-1-2">Hạng ghế</label>
-						<div class="uk-form-controls uk-width-1-2">
-						  <select class="uk-select">
-							<option>Phổ thông</option>
-							<option>Thương gia</option>
-						  </select>
+					<div class="uk-card-small uk-card-default uk-padding-small">
+						<div class="uk-margin uk-flex">
+							<label class="uk-form-label uk-width-1-2">Người lớn</label>
+							<div>
+								<span class="m-input-number-decrement">–</span>
+								<input class="m-input-number" type="text" value="1" min="0" max="10">
+								<span class="m-input-number-increment">+</span>
+							</div>
 						</div>
+
+						<div class="uk-margin uk-flex">
+							<label class="uk-form-label uk-width-1-2">Trẻ em</label>
+							<div>
+								<span class="m-input-number-decrement">–</span>
+								<input class="m-input-number" type="text" value="0" min="0" max="10">
+								<span class="m-input-number-increment">+</span>
+							</div>
+						</div>
+
+						<div class="uk-flex">
+							<label class="uk-form-label uk-width-1-2">Em bé</label>
+							<div>
+								<span class="m-input-number-decrement">–</span>
+								<input class="m-input-number" type="text" value="0" min="0" max="10">
+								<span class="m-input-number-increment">+</span>
+							</div>
+						</div>
+
 					</div>
 				</div>
 
-				<div class="uk-card-small uk-card-default uk-padding-small">
-					<div class="uk-margin uk-flex">
-						<label class="uk-form-label uk-width-1-2">Người lớn</label>
-						<div>
-							<span class="m-input-number-decrement">–</span>
-							<input class="m-input-number" type="text" value="1" min="0" max="10">
-							<span class="m-input-number-increment">+</span>
-						</div>
-					</div>
-
-					<div class="uk-margin uk-flex">
-						<label class="uk-form-label uk-width-1-2">Trẻ em</label>
-						<div>
-							<span class="m-input-number-decrement">–</span>
-							<input class="m-input-number" type="text" value="0" min="0" max="10">
-							<span class="m-input-number-increment">+</span>
-						</div>
-					</div>
-
-					<div class="uk-flex">
-						<label class="uk-form-label uk-width-1-2">Em bé</label>
-						<div>
-							<span class="m-input-number-decrement">–</span>
-							<input class="m-input-number" type="text" value="0" min="0" max="10">
-							<span class="m-input-number-increment">+</span>
-						</div>
-					</div>
-
+				<div class="uk-padding-small uk-flex uk-flex-center uk-margin-bottom">
+					<button class="uk-button uk-button-large uk-button-danger">Tìm chuyến bay</button>
 				</div>
-			</div>
 
-			<div class="uk-padding-small uk-flex uk-flex-center uk-margin-bottom">
-				<button class="uk-button uk-button-large uk-button-danger">Tìm chuyến bay</button>
-			</div>
+			</section>
 		</form>
 
 	</div>
