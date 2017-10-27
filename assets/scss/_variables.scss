@@ -2,39 +2,44 @@
  * Color pallete
  */
 $primary-color-light:			#1AC1FB;
-$primary-color: 				#00BAFB;
+$primary-color: 					#00BAFB;
 $primary-color-dark: 			#00B1EE;
 
-$secondary-color-light: 		#fbd53f;
+$secondary-color-light: 	#fbd53f;
 $secondary-color: 				#FFCD03;
-$secondary-color-dark:			#f9c804;
+$secondary-color-dark:		#f9c804;
 
 $accent-color-light: 			#ef707e;
-$accent-color: 					#FF5D6E;
+$accent-color: 						#FF5D6E;
 $accent-color-dark: 			#ec4d5e;
 
-$green:							#58E481;
+$gradient-primary-1: 			#22E1FF;
+$gradient-primary-2: 			#1D8FE1;
+$gradient-primary-3: 			#625EB1;
 
-$black: 						#1F2D3D;
-$black-light: 					#324057;
+$gradient-secondary-1: 		$secondary-color;
+$gradient-secondary-2: 		#F38181;
+
+$black: 									#1F2D3D;
+$black-light: 						#324057;
 $black-extra-light: 			#475669;
 
-$silver:						#8492A6;
-$silver-light: 					#99A9BF;
+$silver:									#8492A6;
+$silver-light: 						#99A9BF;
 $silver-extra-light: 			#C0CCDA;
 
-$gray: 							#D3DCE6;
-$gray-light: 					#E5E9F2;
+$gray: 										#D3DCE6;
+$gray-light: 							#E5E9F2;
 $gray-extra-light: 				#EFF2F7;
 
-$white-dark: 					#F9FAFC;
-$white: 						#ffffff;
+$white-dark: 							#F9FAFC;
+$white: 									#ffffff;
 
-$border-color: 					$gray-extra-light;
-$border-color-2: 				#999;
-$text-color: 					#666;
-$text-hint:						$silver;
-$background-dark:				$black;
+$border-color: 						$gray-extra-light;
+$border-color-2: 					#999;
+$text-color: 							#666;
+$text-hint:								$silver;
+$background-dark:					$black;
 $background-light:				$white-dark;
 
 

@@ -1,12 +1,12 @@
+.uk-light {
+	.uk-input {
+		color: $white;
+	}
+}
 .m-formsearch {
 	margin-top: $normal-spacing;
 	.m-double-radio {
 		top: 30px;
-	}
-	.uk-light {
-		.uk-input {
-			color: $white;
-		}
 	}
 	.m-double-radio {
 		width: 76%;
@@ -31,4 +31,11 @@
 	padding-left: 0;
 	padding-right: 0;
 	font-size: $font-size-title;
+}
+.m-bg-travel {
+	background: $primary-color;
+	background-image: url('../images/worldmap3.svg'), linear-gradient(-225deg, $gradient-primary-1 0%, $gradient-primary-2 48%, $gradient-primary-3 100%);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: 100% auto;
 }

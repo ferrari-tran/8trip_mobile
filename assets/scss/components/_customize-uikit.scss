@@ -31,3 +31,14 @@ form label {
 		margin-bottom: 0;
 	}
 }
+
+// Card
+.uk-card[uk-toggle] {
+	cursor: pointer;
+}
+
+// Table
+.uk-table-middle th {
+	vertical-align: middle !important;
+}
+
