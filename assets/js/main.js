@@ -123,4 +123,12 @@ $(document).ready(function() {
 		UIkit.modal(modal).hide();
 		UIkit.switcher(switcher).show(2);
 	});
+
+	$('.m-button-return-search').click(function(e) {
+		e.preventDefault();
+		var parent = $(e.target).closest('.m-ticket-chosen');
+		var resultArea = $(parent).prev();
+		$(parent).toggle();
+		$(resultArea).toggle();
+	});
 });
