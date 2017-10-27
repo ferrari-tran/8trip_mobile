@@ -14,7 +14,7 @@
 
 	<div class="m-wrapper uk-offcanvas-content">
 		<form class="m-form">
-			<div class="m-bg-highlight-tb">
+			<div class="m-bg-gradient-primary uk-light">
 				<nav class="uk-navbar-container uk-navbar-transparent uk-light" uk-navbar>
 					<div class="uk-navbar-left">
 						<a class="uk-icon-link" uk-icon="icon: arrow-left; ratio: 2" href="#"></a>
@@ -42,9 +42,12 @@
 					</div>
 				</div>
 
-				<div class="uk-padding-remove-top uk-padding-small uk-flex uk-flex-around">
+				<hr class="uk-margin-remove-bottom">
+
+				<div class="uk-padding-small uk-flex uk-flex-around">
 					<a href="#" class="uk-button uk-button-text">Đổi tìm kiếm</a>
 					<a href="#" class="uk-button uk-button-text">Vé ngày khác</a>
+					<a href="#" class="uk-button uk-button-text">Tìm nâng cao</a>
 				</div>
 			</div>
 
@@ -63,150 +66,145 @@
 
 			<section class="uk-padding-small uk-background-muted m-result-list">
 
-				<div class="uk-card uk-card-small uk-card-default uk-padding-small uk-margin m-result-item" uk-toggle="target: #modal-detail">
-					<div data-item="roundtrip1">
-						<div class="uk-flex uk-flex-between uk-margin-small">
-							<div class="uk-flex uk-flex-middle uk-width-3-5">
-								<img src="assets/images/brand_vna.png" alt="brand" class="m-brand-small">
-								<span class="uk-margin-small-left">Vietnam Airline</span>
+				<ul class="uk-subnav uk-subnav-pill" uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
+			    <li><a href="#">Chiều đi</a></li>
+			    <li><a href="#">Chiều về</a></li>
+				</ul>
+
+				<ul class="uk-switcher" id="m-booking-switcher">
+					<li>
+						<div class="m-result-list" id="m-result-list-1">
+
+							<div class="uk-card uk-card-hover uk-card-small uk-card-default uk-padding-small uk-margin m-result-item" uk-toggle="target: #modal-detail-4">
+								<div data-item="roundtrip2">
+									<div class="uk-flex uk-flex-between uk-margin-small">
+										<div class="uk-flex uk-flex-middle uk-width-3-5">
+											<img src="assets/images/brand_vna.png" alt="brand" class="m-brand-small">
+											<span class="uk-margin-small-left">Vietnam Airline</span>
+										</div>
+										<span class="m-text-highlight uk-text-bold">12.018.500 VND</span>
+									</div>
+
+									<div class="uk-flex uk-flex-middle">
+										<div class="uk-flex uk-flex-column uk-width-1-3">
+											<span class="uk-text-large m-text-bold">17:20</span>
+											<span class="uk-text-meta">Hà Nội</span>
+										</div>
+										<div class="uk-flex uk-flex-column uk-flex-middle uk-width-1-3">
+											<span class="uk-text-small">20h 55m</span>
+											<span class="uk-text-meta">1 điểm dừng</span>
+										</div>
+										<div class="uk-flex uk-flex-column m-text-right uk-width-1-3">
+											<span class="uk-text-large m-text-bold">07:15</span>
+											<span class="uk-text-meta">London</span>
+										</div>
+									</div>
+
+									<hr>
+
+									<div class="uk-flex uk-flex-middle">
+										<div class="uk-flex uk-flex-column uk-width-1-3">
+											<span class="uk-text-large m-text-bold">11:00</span>
+											<span class="uk-text-meta">London</span>
+										</div>
+										<div class="uk-flex uk-flex-column uk-flex-middle uk-width-1-3">
+											<span class="uk-text-small">16h 5m</span>
+											<span class="uk-text-meta">1 điểm dừng</span>
+										</div>
+										<div class="uk-flex uk-flex-column m-text-right uk-width-1-3">
+											<span class="uk-text-large m-text-bold">10:05</span>
+											<span class="uk-text-meta">Hà Nội</span>
+										</div>
+									</div>
+									
+								</div>
 							</div>
-							<span class="m-text-highlight uk-text-bold">3.000.000 VND</span>
+							<!-- End result-item -->
 						</div>
+						<div class="m-ticket-chosen" style="display: none;">
+							<div class="uk-card uk-card-hover uk-card-default uk-padding-small">
+								<!-- <div class="uk-flex uk-flex-middle uk-margin">
+									<img src="assets/images/brand_vna.png" alt="brand" class="m-brand-small"> <span class="uk-margin-small-left">Vietnam Airline (<span class="uk-text-bold">VN-193</span>)</span>
+								</div> -->
+								<h4 class="uk-heading-divider uk-text-uppercase uk-text-primary"><span>Vé đã đặt</span></h4>
+								<div class="uk-flex uk-flex-top uk-margin">
+									<div class="uk-flex uk-flex-column uk-width-2-5">
+										<span class="uk-h2 uk-margin-remove-bottom">17:20</span>
+										<span class="uk-text-small">CN, 29/10</span>
+										<span class="uk-text-meta">Sân bay Nội Bài</span>
+									</div>
+									<div class="uk-flex uk-flex-column uk-flex-middle uk-width-1-5 uk-margin-small-top text-center">
+										<span class="uk-text-small">20h 25m</span>
+										<span class="uk-text-meta uk-text-center">1 điểm dừng</span>
+									</div>
+									<div class="uk-flex uk-flex-column m-text-right uk-width-2-5">
+										<span class="uk-h2 uk-margin-remove-bottom">07:15</span>
+										<span class="uk-text-small">T2, 30/10</span>
+										<span class="uk-text-meta">Sân bay Heathrow</span>
+									</div>
+								</div>
 
-						<div class="uk-flex uk-flex-middle">
-							<div class="uk-flex uk-flex-column uk-width-1-3">
-								<span class="uk-text-large m-text-bold">22:00</span>
-								<span class="uk-text-meta">Hà Nội</span>
-							</div>
-							<div class="uk-flex uk-flex-column uk-flex-middle uk-width-1-3">
-								<span class="uk-text-small">20h 25m</span>
-								<span class="uk-text-meta">2 điểm dừng</span>
-							</div>
-							<div class="uk-flex uk-flex-column m-text-right uk-width-1-3">
-								<span class="uk-text-large m-text-bold">12:40</span>
-								<span class="uk-text-meta">London</span>
-							</div>
-						</div>
+								<div class="uk-text-center">
+									<a href="#" uk-toggle="target: #modal-detail-3">Chi tiết lộ trình</a>
+								</div>
 
-						<hr>
-
-						<div class="uk-flex uk-flex-middle">
-							<div class="uk-flex uk-flex-column uk-width-1-3">
-								<span class="uk-text-large m-text-bold">22:00</span>
-								<span class="uk-text-meta">London</span>
+								<div class="m-route-detail">
+									<table class="uk-table uk-table-small uk-table-middle uk-margin-remove-bottom">
+										<tr>
+											<th>Giá vé: <span title="Đã gồm thuế và phụ phí" uk-tooltip uk-icon="icon: info; ratio: 0.75"></span></th>
+											<td class="uk-h3 m-text-highlight">12.018.500 VND</td>
+										</tr>
+									</table>
+								</div>
 							</div>
-							<div class="uk-flex uk-flex-column uk-flex-middle uk-width-1-3">
-								<span class="uk-text-small">20h 25m</span>
-								<span class="uk-text-meta">2 điểm dừng</span>
-							</div>
-							<div class="uk-flex uk-flex-column m-text-right uk-width-1-3">
-								<span class="uk-text-large m-text-bold">12:40</span>
-								<span class="uk-text-meta">Hà Nội</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- End result-item -->
-
-				<div class="uk-card uk-card-small uk-card-default uk-padding-small uk-margin m-result-item" uk-toggle="target: #modal-detail">
-					<div data-item="roundtrip2">
-						<div class="uk-flex uk-flex-between uk-margin-small">
-							<div class="uk-flex uk-flex-middle uk-width-3-5">
-								<img src="assets/images/brand_vna.png" alt="brand" class="m-brand-small">
-								<span class="uk-margin-small-left">Vietnam Airline</span>
-							</div>
-							<span class="m-text-highlight uk-text-bold">3.000.000 VND</span>
-						</div>
-
-						<div class="uk-flex uk-flex-middle">
-							<div class="uk-flex uk-flex-column uk-width-1-3">
-								<span class="uk-text-large m-text-bold">22:00</span>
-								<span class="uk-text-meta">Hà Nội</span>
-							</div>
-							<div class="uk-flex uk-flex-column uk-flex-middle uk-width-1-3">
-								<span class="uk-text-small">20h 25m</span>
-								<span class="uk-text-meta">2 điểm dừng</span>
-							</div>
-							<div class="uk-flex uk-flex-column m-text-right uk-width-1-3">
-								<span class="uk-text-large m-text-bold">12:40</span>
-								<span class="uk-text-meta">London</span>
-							</div>
-						</div>
-
-						<hr>
-
-						<div class="uk-flex uk-flex-middle">
-							<div class="uk-flex uk-flex-column uk-width-1-3">
-								<span class="uk-text-large m-text-bold">22:00</span>
-								<span class="uk-text-meta">London</span>
-							</div>
-							<div class="uk-flex uk-flex-column uk-flex-middle uk-width-1-3">
-								<span class="uk-text-small">20h 25m</span>
-								<span class="uk-text-meta">2 điểm dừng</span>
-							</div>
-							<div class="uk-flex uk-flex-column m-text-right uk-width-1-3">
-								<span class="uk-text-large m-text-bold">12:40</span>
-								<span class="uk-text-meta">Hà Nội</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- End result-item -->
-
-				<div class="uk-card uk-card-small uk-card-default uk-padding-small uk-margin m-result-item" uk-toggle="target: #modal-detail">
-					<div data-item="roundtrip3">
-						<div class="uk-flex uk-flex-between uk-margin-small">
-							<div class="uk-flex uk-flex-middle uk-width-3-5">
-								<img src="assets/images/brand_vna.png" alt="brand" class="m-brand-small">
-								<span class="uk-margin-small-left">Vietnam Airline</span>
-							</div>
-							<span class="m-text-highlight uk-text-bold">3.000.000 VND</span>
-						</div>
-
-						<div class="uk-flex uk-flex-middle">
-							<div class="uk-flex uk-flex-column uk-width-1-3">
-								<span class="uk-text-large m-text-bold">22:00</span>
-								<span class="uk-text-meta">Hà Nội</span>
-							</div>
-							<div class="uk-flex uk-flex-column uk-flex-middle uk-width-1-3">
-								<span class="uk-text-small">20h 25m</span>
-								<span class="uk-text-meta">2 điểm dừng</span>
-							</div>
-							<div class="uk-flex uk-flex-column m-text-right uk-width-1-3">
-								<span class="uk-text-large m-text-bold">12:40</span>
-								<span class="uk-text-meta">London</span>
+							<div class="uk-margin uk-flex uk-flex-between">
+								<button class="uk-button uk-button-default m-button-return-search">Đổi chuyến bay</button>
+								<button class="uk-button uk-button-primary" uk-switcher-item="next">Đặt vé chiều về</button>
 							</div>
 						</div>
+					</li>
 
-						<hr>
+					<li>
+						<div class="m-result-list">
+							<div class="uk-card uk-card-small uk-card-default uk-padding-small uk-margin m-result-item" uk-toggle="target: #modal-detail-2">
+								<div data-item="roundtrip1">
+									<div class="uk-flex uk-flex-between uk-margin-small">
+										<div class="uk-flex uk-flex-middle uk-width-3-5">
+											<img src="assets/images/brand_vna.png" alt="brand" class="m-brand-small">
+											<span class="uk-margin-small-left">Vietnam Airline</span>
+										</div>
+										<span class="m-text-highlight uk-text-bold">12.018.500 VND</span>
+									</div>
 
-						<div class="uk-flex uk-flex-middle">
-							<div class="uk-flex uk-flex-column uk-width-1-3">
-								<span class="uk-text-large m-text-bold">22:00</span>
-								<span class="uk-text-meta">London</span>
+									<div class="uk-flex uk-flex-middle">
+										<div class="uk-flex uk-flex-column uk-width-1-3">
+											<span class="uk-text-large m-text-bold">11:00</span>
+											<span class="uk-text-meta">London</span>
+										</div>
+										<div class="uk-flex uk-flex-column uk-flex-middle uk-width-1-3">
+											<span class="uk-text-small">16h 5m</span>
+											<span class="uk-text-meta">1 điểm dừng</span>
+										</div>
+										<div class="uk-flex uk-flex-column m-text-right uk-width-1-3">
+											<span class="uk-text-large m-text-bold">10:05</span>
+											<span class="uk-text-meta">Hà Nội</span>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="uk-flex uk-flex-column uk-flex-middle uk-width-1-3">
-								<span class="uk-text-small">20h 25m</span>
-								<span class="uk-text-meta">2 điểm dừng</span>
-							</div>
-							<div class="uk-flex uk-flex-column m-text-right uk-width-1-3">
-								<span class="uk-text-large m-text-bold">12:40</span>
-								<span class="uk-text-meta">Hà Nội</span>
-							</div>
+							<!-- End result-item -->
 						</div>
-					</div>
-				</div>
-				<!-- End result-item -->
+					</li>
+				</ul>
 
 			</section>
 		</form>
 
 	</div>
 
-
-	<!-- Modal detail -->
-	<section id="modal-detail" class="uk-flex-top" uk-modal>
-		<div class="uk-modal-dialog uk-margin-auto-vertical">
+	<!-- Modal detail 4: Vé 2 chiều đã đặt -->
+	<section id="modal-detail-4" class="uk-modal-full" uk-modal>
+		<div class="uk-modal-dialog">
 			<div class="uk-modal-body uk-padding-small">
 				<button class="uk-modal-close-default" type="button" uk-close></button>
 
@@ -219,151 +217,199 @@
 					<ul uk-switcher class="uk-switcher">
 						<li class="uk-active">
 							<article>
-								<div class="uk-text-center">
-									<div class="uk-flex uk-flex-top uk-flex-stretch uk-margin">
+								<div>
+									<div class="uk-flex uk-flex-top uk-flex-stretch uk-margin uk-text-center">
 										<div class="uk-width-1-3 uk-flex uk-flex-column uk-flex-center uk-flex-middle">
-											<span class="uk-text-small">T6, 27/10</span>
-											<span class="uk-h2 uk-margin-remove">18:00</span>
+											<span class="uk-text-small">CN, 29/10</span>
+											<span class="uk-h2 uk-margin-remove">17:20</span>
 											<span class="uk-text-meta">Sân bay Nội Bài</span>
-											<span class="uk-text-meta">Việt Nam</span>
+											<span class="uk-text-meta">Hà Nội - Việt Nam</span>
 										</div>
 										<div class="uk-flex uk-flex-column uk-flex-middle uk-flex-center uk-width-1-3 uk-padding-small uk-padding-remove-horizontal">
 											<img src="assets/images/brand_vna.png" alt="brand" class="m-brand-small">
 											<span class="m-line-horizontal"></span>
-											<span class="uk-text-small">20h 25m</span>
+											<span class="uk-text-small">2h 105m</span>
 											<span class="uk-text-meta">Trạm 1</span>
 										</div>
 										<div class="uk-width-1-3 uk-flex uk-flex-column uk-flex-center uk-flex-middle">
-											<span class="uk-text-small">T6, 27/10</span>
-											<span class="uk-h2 uk-margin-remove">18:00</span>
-											<span class="uk-text-meta">Sân bay Heathrow</span>
-											<span class="uk-text-meta">Anh</span>
+											<span class="uk-text-small">CN, 29/10</span>
+											<span class="uk-h2 uk-margin-remove">19:30</span>
+											<span class="uk-text-meta">Sân bay Tân Sơn Nhất</span>
+											<span class="uk-text-meta">TP HCM - Việt Nam</span>
 										</div>
 									</div>
+
+									<table class="uk-table uk-table-small uk-table-middle">
+										<tbody>
+											<tr>
+												<th class="uk-text-right uk-width-1-2">Số hiệu:</th>
+												<td>VN-7253</td>
+											</tr>
+											<tr>
+												<th class="uk-text-right">Máy bay:</th>
+												<td>Airbus A230</td>
+											</tr>
+											<tr>
+												<th class="uk-text-right">Hạng ghế:</th>
+												<td>Economy - Phổ thông</td>
+											</tr>
+											<tr>
+												<th class="uk-text-right">Hành lý xách tay:</th>
+												<td>7kg</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
 									<hr>
-									<div class="uk-flex uk-flex-top uk-flex-stretch uk-margin">
+
+								<div>
+									<div class="uk-flex uk-flex-top uk-flex-stretch uk-margin uk-text-center">
 										<div class="uk-width-1-3 uk-flex uk-flex-column uk-flex-center uk-flex-middle">
-											<span class="uk-text-small">T6, 27/10</span>
-											<span class="uk-h2 uk-margin-remove">18:00</span>
-											<span class="uk-text-meta">Sân bay Nội Bài</span>
-											<span class="uk-text-meta">Việt Nam</span>
+											<span class="uk-text-small">T2, 30/10</span>
+											<span class="uk-h2 uk-margin-remove">00:45</span>
+											<span class="uk-text-meta">Sân bay Tân Sơn Nhất</span>
+											<span class="uk-text-meta">TP HCM - Việt Nam</span>
 										</div>
 										<div class="uk-flex uk-flex-column uk-flex-middle uk-flex-center uk-width-1-3 uk-padding-small uk-padding-remove-horizontal">
 											<img src="assets/images/brand_vna.png" alt="brand" class="m-brand-small">
 											<span class="m-line-horizontal"></span>
-											<span class="uk-text-small">20h 25m</span>
+											<span class="uk-text-small">13h 30m</span>
 											<span class="uk-text-meta">Trạm 2</span>
 										</div>
 										<div class="uk-width-1-3 uk-flex uk-flex-column uk-flex-center uk-flex-middle">
-											<span class="uk-text-small">T6, 27/10</span>
-											<span class="uk-h2 uk-margin-remove">18:00</span>
+											<span class="uk-text-small">T2, 30/10</span>
+											<span class="uk-h2 uk-margin-remove">07:15</span>
 											<span class="uk-text-meta">Sân bay Heathrow</span>
 											<span class="uk-text-meta">Anh</span>
 										</div>
 									</div>
+									
+									<table class="uk-table uk-table-small uk-table-middle">
+										<tbody>
+											<tr>
+												<th class="uk-text-right uk-width-1-2">Số hiệu:</th>
+												<td>VN-51</td>
+											</tr>
+											<tr>
+												<th class="uk-text-right">Máy bay:</th>
+												<td>Airbus A230</td>
+											</tr>
+											<tr>
+												<th class="uk-text-right">Hạng ghế:</th>
+												<td>Economy - Phổ thông</td>
+											</tr>
+											<tr>
+												<th class="uk-text-right">Hành lý xách tay:</th>
+												<td>7kg</td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
-								<table class="uk-table uk-table-small uk-table-middle">
-									<tbody>
-										<tr>
-											<th class="uk-text-right uk-width-1-3">Số hiệu:</th>
-											<td>VN-193</td>
-										</tr>
-										<tr>
-											<th class="uk-text-right">Máy bay:</th>
-											<td>Airbus A230</td>
-										</tr>
-										<tr>
-											<th class="uk-text-right">Hạng ghế:</th>
-											<td>Economy - Phổ thông</td>
-										</tr>
-										<tr>
-											<th class="uk-text-right">Hành lý xách tay:</th>
-											<td>7kg</td>
-										</tr>
-										<tr>
-											<th class="uk-text-right">Tổng:</th>
-											<td><span class="uk-text-large m-text-highlight uk-text-bold">15.000.000 VND</span></td>
-										</tr>
-									</tbody>
-								</table>
 							</article>
 						</li>
-
 						<li>
 							<article>
-								<div class="uk-text-center">
-									<div class="uk-flex uk-flex-top uk-flex-stretch uk-margin">
+								<div>
+									<div class="uk-flex uk-flex-top uk-flex-stretch uk-margin uk-text-center">
 										<div class="uk-width-1-3 uk-flex uk-flex-column uk-flex-center uk-flex-middle">
-											<span class="uk-text-small">T6, 30/10</span>
-											<span class="uk-h2 uk-margin-remove">18:00</span>
-											<span class="uk-text-meta">Sân bay Nội Bài</span>
-											<span class="uk-text-meta">Việt Nam</span>
+											<span class="uk-text-small">T4, 01/11</span>
+											<span class="uk-h2 uk-margin-remove">11:00</span>
+											<span class="uk-text-meta">Sân bay Heathrow</span>
+											<span class="uk-text-meta">Anh</span>
 										</div>
 										<div class="uk-flex uk-flex-column uk-flex-middle uk-flex-center uk-width-1-3 uk-padding-small uk-padding-remove-horizontal">
 											<img src="assets/images/brand_vna.png" alt="brand" class="m-brand-small">
 											<span class="m-line-horizontal"></span>
-											<span class="uk-text-small">20h 25m</span>
+											<span class="uk-text-small">12h 5m</span>
 											<span class="uk-text-meta">Trạm 1</span>
 										</div>
 										<div class="uk-width-1-3 uk-flex uk-flex-column uk-flex-center uk-flex-middle">
-											<span class="uk-text-small">T7, 31/10</span>
-											<span class="uk-h2 uk-margin-remove">18:00</span>
-											<span class="uk-text-meta">Sân bay Heathrow</span>
-											<span class="uk-text-meta">Anh</span>
+											<span class="uk-text-small">T5, 02/11</span>
+											<span class="uk-h2 uk-margin-remove">06:05</span>
+											<span class="uk-text-meta">Sân bay Tân Sơn Nhất</span>
+											<span class="uk-text-meta">TP HCM - Việt Nam</span>
 										</div>
 									</div>
+
+									<table class="uk-table uk-table-small uk-table-middle">
+										<tbody>
+											<tr>
+												<th class="uk-text-right uk-width-1-2">Số hiệu:</th>
+												<td>VN-7253</td>
+											</tr>
+											<tr>
+												<th class="uk-text-right">Máy bay:</th>
+												<td>Airbus A230</td>
+											</tr>
+											<tr>
+												<th class="uk-text-right">Hạng ghế:</th>
+												<td>Economy - Phổ thông</td>
+											</tr>
+											<tr>
+												<th class="uk-text-right">Hành lý xách tay:</th>
+												<td>7kg</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
 									<hr>
-									<div class="uk-flex uk-flex-top uk-flex-stretch uk-margin">
+
+								<div>
+									<div class="uk-flex uk-flex-top uk-flex-stretch uk-margin uk-text-center">
 										<div class="uk-width-1-3 uk-flex uk-flex-column uk-flex-center uk-flex-middle">
-											<span class="uk-text-small">T6, 27/10</span>
-											<span class="uk-h2 uk-margin-remove">18:00</span>
-											<span class="uk-text-meta">Sân bay Nội Bài</span>
-											<span class="uk-text-meta">Việt Nam</span>
+											<span class="uk-text-small">T5, 02/11</span>
+											<span class="uk-h2 uk-margin-remove">08:00</span>
+											<span class="uk-text-meta">Sân bay Tân Sơn Nhất</span>
+											<span class="uk-text-meta">TP HCM - Việt Nam</span>
 										</div>
 										<div class="uk-flex uk-flex-column uk-flex-middle uk-flex-center uk-width-1-3 uk-padding-small uk-padding-remove-horizontal">
 											<img src="assets/images/brand_vna.png" alt="brand" class="m-brand-small">
 											<span class="m-line-horizontal"></span>
-											<span class="uk-text-small">20h 25m</span>
+											<span class="uk-text-small">2h 5m</span>
 											<span class="uk-text-meta">Trạm 2</span>
 										</div>
 										<div class="uk-width-1-3 uk-flex uk-flex-column uk-flex-center uk-flex-middle">
-											<span class="uk-text-small">T6, 27/10</span>
-											<span class="uk-h2 uk-margin-remove">18:00</span>
-											<span class="uk-text-meta">Sân bay Heathrow</span>
-											<span class="uk-text-meta">Anh</span>
+											<span class="uk-text-small">T5, 02/11</span>
+											<span class="uk-h2 uk-margin-remove">10:05</span>
+											<span class="uk-text-meta">Sân bay Nội Bài</span>
+											<span class="uk-text-meta">Hà Nội - Việt Nam</span>
 										</div>
 									</div>
+									
+									<table class="uk-table uk-table-small uk-table-middle">
+										<tbody>
+											<tr>
+												<th class="uk-text-right uk-width-1-2">Số hiệu:</th>
+												<td>VN-51</td>
+											</tr>
+											<tr>
+												<th class="uk-text-right">Máy bay:</th>
+												<td>Airbus A230</td>
+											</tr>
+											<tr>
+												<th class="uk-text-right">Hạng ghế:</th>
+												<td>Economy - Phổ thông</td>
+											</tr>
+											<tr>
+												<th class="uk-text-right">Hành lý xách tay:</th>
+												<td>7kg</td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
-								<table class="uk-table uk-table-small uk-table-middle">
-									<tbody>
-										<tr>
-											<th class="uk-text-right uk-width-1-2@s uk-width-1-3">Số hiệu:</th>
-											<td>VN-193</td>
-										</tr>
-										<tr>
-											<th class="uk-text-right">Máy bay:</th>
-											<td>Airbus A230</td>
-										</tr>
-										<tr>
-											<th class="uk-text-right">Hạng ghế:</th>
-											<td>Economy - Phổ thông</td>
-										</tr>
-										<tr>
-											<th class="uk-text-right">Hành lý xách tay:</th>
-											<td>7kg</td>
-										</tr>
-										<tr>
-											<th class="uk-text-right">Tổng:</th>
-											<td><span class="uk-text-large m-text-highlight uk-text-bold">15.000.000 VND</span></td>
-										</tr>
-									</tbody>
-								</table>
 							</article>
 						</li>
 					</ul>
 
+					<hr>
+
+					<p class="uk-text-center uk-margin-remove">Tổng giá vé 2 chiều:</p>
+					<p class="uk-h3 m-text-highlight uk-text-center uk-margin-remove">24.037.000 VND</p>
+
 					<div class="uk-margin uk-text-center">
-						<button class="uk-button uk-button-primary">Tiếp tục đặt vé</button>
+						<button class="uk-button uk-button-primary m-button-booking" data-booking="departure-flight">Đặt vé</button>
 					</div>
 				</div>
 			</div>
