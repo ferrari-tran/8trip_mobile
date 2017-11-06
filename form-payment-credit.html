@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=414, maximum-scale=1">
+	<title>Form payment credit</title>
+
+	<!-- Framework UI Kit -->
+	<link rel="stylesheet" href="assets/vendor/uikit/css/uikit.min.css">
+	<link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body>
+
+	<div class="m-wrapper uk-offcanvas-content">
+		<form class="m-form">
+			<div class="m-bg-highlight-tb">
+				<nav class="uk-navbar-container uk-navbar-transparent uk-light" uk-navbar>
+					<div class="uk-navbar-left">
+						<a class="uk-icon-link" uk-icon="icon: arrow-left; ratio: 2" href="form-booking.html"></a>
+					</div>
+
+					<div class="uk-navbar-center"><h4 class="m-title-page">Thẻ tín dụng</h4></div>
+
+					<div class="uk-navbar-right">
+						<a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-icon="ratio: 2"  uk-toggle="target: #mainSidebar"></a>
+					</div>
+				</nav>
+				<!-- End nav -->
+			</div>
+
+			<aside id="mainSidebar" uk-offcanvas="overlay: true; flip: true; mode: slide;">
+				<div class="uk-offcanvas-bar">
+
+					<button class="uk-offcanvas-close" type="button" uk-close></button>
+
+					<h3>Sidebar is here</h3>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+				</div>
+			</aside>
+			<!-- End #mainSidebar -->
+
+			<section class="m-payment-list uk-padding-small uk-text-justify">
+
+				<div>
+					<div class="uk-margin uk-flex uk-flex-middle">
+						<div class="uk-width-1-2"><span class="uk-text-bold">Số thẻ tín dụng</span></div>
+						<div class="uk-width-1-2">
+							<input type="text" class="uk-input" placeholder="16 chữ số viết liền">
+						</div>
+					</div>
+					<div class="uk-margin uk-flex uk-flex-middle">
+						<div class="uk-width-1-2"><span class="uk-text-bold">Tên in trên thẻ</span></div>
+						<div class="uk-width-1-2">
+							<input type="text" class="uk-input" placeholder="Tên không dấu">
+						</div>
+					</div>
+					<div class="uk-margin uk-flex uk-flex-middle">
+						<div class="uk-width-1-2"><span class="uk-text-bold">Có hiệu lực đến</span></div>
+						<div class="uk-width-1-2">
+							<input type="text" class="uk-input" placeholder="MM/YY">
+						</div>
+					</div>
+					<div class="uk-margin uk-flex uk-flex-middle">
+						<div class="uk-width-1-2"><span class="uk-text-bold">CVV</span></div>
+						<div class="uk-width-1-2">
+							<input type="text" class="uk-input" placeholder="3 chữ số cuối sau thẻ" length="3">
+						</div>
+					</div>
+					<div class="uk-margin uk-flex uk-flex-middle">
+						<div class="uk-width-1-2"><span class="uk-text-bold">Mã giảm giá</span></div>
+						<div class="uk-width-1-3">
+							<input type="text" class="uk-input" placeholder="Nhập code">
+						</div>
+					</div>
+
+					<div class="uk-card uk-card-primary uk-card-small uk-card-body">
+						<table class="uk-table uk-table-small">
+							<tbody>
+								<tr>
+									<td>Người lớn (x2)</td>
+									<td class="uk-text-right">30.000.000 VND</td>
+								</tr>
+								<tr>
+									<td>Phụ phí:</td>
+									<td class="uk-text-right">0 VND</td>
+								</tr>
+								<tr>
+									<td>Thuế:</td>
+									<td class="uk-text-right">500.000 VND</td>
+								</tr>
+							</tbody>
+						</table>
+						<hr>
+						<div class="uk-flex uk-flex-between">
+							<span>Tổng:</span>
+							<span class="uk-h4 m-text-secondary uk-margin-remove">30.500.000 VND</span>
+						</div>
+					</div>
+
+					<div class="uk-margin">
+						<label><input class="uk-checkbox" type="checkbox"> Đồng ý với điều khoản và điều kiện, chính sách quyền riêng tư</label>
+					</div>
+
+					<div class="uk-margin uk-text-center">
+						<button class="uk-button m-button-secondary">Thanh toán</button>
+					</div>
+				</div>
+
+			</section>
+		</form>
+	</div>
+
+
+	<!-- Script -->
+	<script src="assets/vendor/jquery.min.js"></script>
+	<script src="assets/vendor/uikit/js/uikit.min.js"></script>
+	<script src="assets/vendor/uikit/js/uikit-icons.min.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
