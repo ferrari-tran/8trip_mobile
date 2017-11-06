@@ -132,3 +132,18 @@ $(document).ready(function() {
 		$(resultArea).toggle();
 	});
 });
+
+// Offcanvas city
+$(function() {
+	var input;
+	input = $('.m-insert-place').click(function(e) {
+		return e.target;
+	});
+
+	UIkit.util.on('.m-offcanvas-city', 'show', function (event, offCanvas) {
+		console.log(event);
+		console.log(offCanvas);
+		console.log(input);
+		input = null
+	});
+});
