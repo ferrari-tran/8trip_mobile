@@ -36,13 +36,13 @@
 						<div class="m-formsearch-place">
 							<div class="m-group-text-media">
 								<p class="">Điểm đi</p>
-								<input type="text" placeholder="Chạm để chọn điểm đi" class="m-insert-place m-input-hiding uk-input" data-ref="from-place-1" uk-toggle="target: #offcanvas-city">
+								<input type="text" placeholder="Chạm để chọn điểm đi" class="m-insert-place m-input-hiding uk-input" data-ref="from-place-1" uk-toggle="target: #offcanvas-city-1">
 								<!-- <p class="uk-text-small">Chạm để chọn điểm đi</p> -->
 							</div>
 
 							<div class="m-group-text-media">
 								<p class="">Điểm đến</p>
-								<input type="text" placeholder="Chạm để chọn điểm tới" class="m-insert-place m-input-hiding uk-input"  data-ref="to-place-1" uk-toggle="target: #offcanvas-city">
+								<input type="text" placeholder="Chạm để chọn điểm tới" class="m-insert-place m-input-hiding uk-input"  data-ref="to-place-1" uk-toggle="target: #offcanvas-city-2">
 								<!-- <p class="uk-text-small">Chạm để chọn điểm đến</p> -->
 							</div>
 
@@ -165,12 +165,23 @@
 
 	</div>
 
+	<!--
+		Lưu ý:
 
-	<!-- Pick city -->
-	<div id="offcanvas-city" uk-offcanvas="overlay: false; mode: slide" class="m-offcanvas-city">
+		Tại trường <input> cần setup các thông số sau để match với Off-canvas (nav-left):
+		+ data-ref="input_name" : Đặt input_name tương tự với id để xác định trường input duy nhất
+		+ uk-toggle="target	: "offcanvas_name" : Gọi tới id của off-canvas muốn show
+
+		Tại off-canvas cần các thông số sau:
+		+ id: phải bằng giá trị của uk-toogle{target} tại input
+		+ data-target: bằng data-ref của input
+	-->
+
+	<!-- Pick điểm đi -->
+	<div id="offcanvas-city-1" uk-offcanvas="overlay: false; mode: slide" class="m-offcanvas-city" data-target="from-place-1">
     <div class="uk-offcanvas-bar">
     	<button class="uk-offcanvas-close" type="button" uk-close></button>
-      <h4 class="uk-h4 uk-margin-remove-top">Lựa chọn địa điểm</h4>
+      <h4 class="uk-h4 uk-margin-remove-top">Chọn địa điểm đi</h4>
 
       <div class="uk-flex uk-flex-between uk-margin-bottom">
       	<div class="uk-form-controls uk-margin-small-right">
@@ -183,13 +194,13 @@
       	<div class="m-place">
       		<h5 class="uk-text-uppercase m-text-secondary">Điểm đến phổ biến</h5>
       		<ul class="uk-list">
-      			<li>Bangkok</li>
-      			<li>Singapore</li>
-      			<li>Kuala Lumpur</li>
-      			<li>Tokyo</li>
-      			<li>Seoul</li>
-      			<li>Quảng Châu</li>
-      			<li>Hong Kong</li>
+      			<li class="m-city-item">Bangkok</li>
+      			<li class="m-city-item">Singapore</li>
+      			<li class="m-city-item">Kuala Lumpur</li>
+      			<li class="m-city-item">Tokyo</li>
+      			<li class="m-city-item">Seoul</li>
+      			<li class="m-city-item">Quảng Châu</li>
+      			<li class="m-city-item">Hong Kong</li>
       		</ul>
       	</div>
 
@@ -198,9 +209,9 @@
       	<div class="m-place">
       		<h5 class="uk-text-uppercase m-text-secondary">Miền Bắc</h5>
       		<ul class="uk-list">
-      			<li>Hà Nội</li>
-      			<li>Vinh</li>
-      			<li>Hải Phòng</li>
+      			<li class="m-city-item">Hà Nội</li>
+      			<li class="m-city-item">Vinh</li>
+      			<li class="m-city-item">Hải Phòng</li>
       		</ul>
       	</div>
 
@@ -209,13 +220,13 @@
       	<div class="m-place">
       		<h5 class="uk-text-uppercase m-text-secondary">Miền Trung</h5>
       		<ul class="uk-list">
-      			<li>Thanh Hoá</li>
-      			<li>Đà Nẵng</li>
-      			<li>Huế</li>
-      			<li>Đồng Hới</li>
-      			<li>Tuy Hoà</li>
-      			<li>Chu Lai</li>
-      			<li>Pleiku</li>
+      			<li class="m-city-item">Thanh Hoá</li>
+      			<li class="m-city-item">Đà Nẵng</li>
+      			<li class="m-city-item">Huế</li>
+      			<li class="m-city-item">Đồng Hới</li>
+      			<li class="m-city-item">Tuy Hoà</li>
+      			<li class="m-city-item">Chu Lai</li>
+      			<li class="m-city-item">Pleiku</li>
       		</ul>
       	</div>
 
@@ -224,16 +235,91 @@
       	<div class="m-place">
       		<h5 class="uk-text-uppercase m-text-secondary">Miền Nam</h5>
       		<ul class="uk-list">
-      			<li>Hồ Chí Minh</li>
-      			<li>Nha Trang</li>
-      			<li>Đà Lạt</li>
-      			<li>Phú Quốc</li>
-      			<li>Cần Thơ</li>
-      			<li>Côn Đảo</li>
-      			<li>Rạch Giá</li>
-      			<li>Cà Mau</li>
-      			<li>Buôn Ma Thuột</li>
-      			<li>Quy Nhơn</li>
+      			<li class="m-city-item">Hồ Chí Minh</li>
+      			<li class="m-city-item">Nha Trang</li>
+      			<li class="m-city-item">Đà Lạt</li>
+      			<li class="m-city-item">Phú Quốc</li>
+      			<li class="m-city-item">Cần Thơ</li>
+      			<li class="m-city-item">Côn Đảo</li>
+      			<li class="m-city-item">Rạch Giá</li>
+      			<li class="m-city-item">Cà Mau</li>
+      			<li class="m-city-item">Buôn Ma Thuột</li>
+      			<li class="m-city-item">Quy Nhơn</li>
+      		</ul>
+      	</div>
+      </div>
+
+    </div>
+	</div>
+
+	<!-- Pick điểm tới -->
+	<div id="offcanvas-city-2" uk-offcanvas="overlay: false; mode: slide" class="m-offcanvas-city" data-target="to-place-1">
+    <div class="uk-offcanvas-bar">
+    	<button class="uk-offcanvas-close" type="button" uk-close></button>
+      <h4 class="uk-h4 uk-margin-remove-top">Chọn địa điểm tới</h4>
+
+      <div class="uk-flex uk-flex-between uk-margin-bottom">
+      	<div class="uk-form-controls uk-margin-small-right">
+      		<input type="text" class="uk-input uk-form-small" placeholder="Chọn địa điểm">
+      	</div>
+      	<button class="uk-button m-button-secondary uk-button-small">Chọn</button>
+      </div>
+
+      <div class="m-place-list">
+      	<div class="m-place">
+      		<h5 class="uk-text-uppercase m-text-secondary">Điểm đến phổ biến</h5>
+      		<ul class="uk-list">
+      			<li class="m-city-item">Bangkok</li>
+      			<li class="m-city-item">Singapore</li>
+      			<li class="m-city-item">Kuala Lumpur</li>
+      			<li class="m-city-item">Tokyo</li>
+      			<li class="m-city-item">Seoul</li>
+      			<li class="m-city-item">Quảng Châu</li>
+      			<li class="m-city-item">Hong Kong</li>
+      		</ul>
+      	</div>
+
+      	<hr>
+
+      	<div class="m-place">
+      		<h5 class="uk-text-uppercase m-text-secondary">Miền Bắc</h5>
+      		<ul class="uk-list">
+      			<li class="m-city-item">Hà Nội</li>
+      			<li class="m-city-item">Vinh</li>
+      			<li class="m-city-item">Hải Phòng</li>
+      		</ul>
+      	</div>
+
+      	<hr>
+
+      	<div class="m-place">
+      		<h5 class="uk-text-uppercase m-text-secondary">Miền Trung</h5>
+      		<ul class="uk-list">
+      			<li class="m-city-item">Thanh Hoá</li>
+      			<li class="m-city-item">Đà Nẵng</li>
+      			<li class="m-city-item">Huế</li>
+      			<li class="m-city-item">Đồng Hới</li>
+      			<li class="m-city-item">Tuy Hoà</li>
+      			<li class="m-city-item">Chu Lai</li>
+      			<li class="m-city-item">Pleiku</li>
+      		</ul>
+      	</div>
+
+      	<hr>
+
+      	<div class="m-place">
+      		<h5 class="uk-text-uppercase m-text-secondary">Miền Nam</h5>
+      		<ul class="uk-list">
+      			<li class="m-city-item">Hồ Chí Minh</li>
+      			<li class="m-city-item">Nha Trang</li>
+      			<li class="m-city-item">Đà Lạt</li>
+      			<li class="m-city-item">Phú Quốc</li>
+      			<li class="m-city-item">Cần Thơ</li>
+      			<li class="m-city-item">Côn Đảo</li>
+      			<li class="m-city-item">Rạch Giá</li>
+      			<li class="m-city-item">Cà Mau</li>
+      			<li class="m-city-item">Buôn Ma Thuột</li>
+      			<li class="m-city-item">Quy Nhơn</li>
       		</ul>
       	</div>
       </div>

@@ -48,42 +48,42 @@ $(document).ready(function() {
 
 // Customize input number
 (function() {
-  window.inputNumber = function(el) {
+	window.inputNumber = function(el) {
 
-    var min = el.attr('min') || false;
-    var max = el.attr('max') || false;
+		var min = el.attr('min') || false;
+		var max = el.attr('max') || false;
 
-    var els = {};
+		var els = {};
 
-    els.dec = el.prev();
-    els.inc = el.next();
+		els.dec = el.prev();
+		els.inc = el.next();
 
-    el.each(function() {
-      init($(this));
-    });
+		el.each(function() {
+			init($(this));
+		});
 
-    function init(el) {
+		function init(el) {
 
-      els.dec.on('click', decrement);
-      els.inc.on('click', increment);
+			els.dec.on('click', decrement);
+			els.inc.on('click', increment);
 
-      function decrement() {
-        var value = el[0].value;
-        value--;
-        if(!min || value >= min) {
-          el[0].value = value;
-        }
-      }
+			function decrement() {
+				var value = el[0].value;
+				value--;
+				if(!min || value >= min) {
+					el[0].value = value;
+				}
+			}
 
-      function increment() {
-        var value = el[0].value;
-        value++;
-        if(!max || value <= max) {
-          el[0].value = value++;
-        }
-      }
-    }
-  }
+			function increment() {
+				var value = el[0].value;
+				value++;
+				if(!max || value <= max) {
+					el[0].value = value++;
+				}
+			}
+		}
+	}
 })();
 
 $(document).ready(function() {
@@ -135,15 +135,34 @@ $(document).ready(function() {
 
 // Offcanvas city
 $(function() {
-	var input;
-	input = $('.m-insert-place').click(function(e) {
-		return e.target;
-	});
+	$('.m-offcanvas-city').map(function(index, offCanvas) {
+		UIkit.util.on(offCanvas, 'show', function (event, offCanvas) {
+			var target 		= event.target,
+					city 		= $(target).find('.m-city-item'),
+					key 			= $(event.target).attr('id'),
+					button 		= $(target).find('.uk-button')[0],
+					targetInput = $(target).data('target'),
+					inputSearch = $(target).find('.uk-input')[0];
 
-	UIkit.util.on('.m-offcanvas-city', 'show', function (event, offCanvas) {
-		console.log(event);
-		console.log(offCanvas);
-		console.log(input);
-		input = null
+			// Set focus to input search after show Off-canvas
+			inputSearch.focus();
+
+			// Click city to choose
+			$(city).click(function(e) {
+				e.preventDefault();
+				var cityName 					= $(this).text();
+				UIkit.offcanvas(target).hide();
+				$('[data-ref="' + targetInput + '"]').val(cityName);
+			});
+
+			// Choose city to set in input outside
+			$(button).click(function(e) {
+				e.preventDefault();
+				var cityName = $(e.target).prev().find('.uk-input').val();
+				UIkit.offcanvas(target).hide();
+				$('[data-ref="' + targetInput + '"]').val(cityName);
+			});
+		});
 	});
 });
+
