@@ -20,6 +20,9 @@
 	text-align: right;
 }
 // Text color
+.m-text-primary {
+	color: $primary-color !important;
+}
 .m-text-secondary {
 	color: $secondary-color !important;
 }
