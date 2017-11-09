@@ -21,6 +21,24 @@
 	background-image: linear-gradient(-225deg, $gradient-primary-1 0%, $gradient-primary-2 48%, $gradient-primary-3 100%);
 }
 
+.m-bg-fly-to-sky {
+	@extend .m-bg-gradient-primary;
+	position: relative;
+	z-index: 0;
+	&::before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: url('../images/flight_to_sky.svg') no-repeat;
+		background-size: 200% auto;
+		background-position: bottom right;
+		opacity: 0.2;
+		z-index: -1;
+		mix-blend-mode: screen;
+	}
+}
+
 .m-bg-white-tb {
 	background: $primary-color;
 	background: -webkit-linear-gradient(to bottom, rgba($white, 0), $white);
@@ -122,3 +140,9 @@
 	background: $secondary-color;
 	// color: $text-color;
 }
+
+// Position
+.m-position-bottom {
+	align-self: flex-end;
+}
+
