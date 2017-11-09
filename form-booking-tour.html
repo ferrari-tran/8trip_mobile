@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=414, maximum-scale=1">
+	<title>Booking tour</title>
+
+	<!-- Framework UI Kit -->
+	<link rel="stylesheet" href="assets/vendor/uikit/css/uikit.min.css">
+	<link rel="stylesheet" href="assets/vendor/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+	<link rel="stylesheet" href="assets/vendor/jquery-ui-1.12.1.custom/jquery-ui.structure.min.css">
+	<link rel="stylesheet" href="assets/vendor/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css">
+	<link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body class="uk-offcanvas-content">
+
+	<div class="m-wrapper">
+		<form class="m-form uk-background-muted">
+			<div class="m-bg-gradient-primary">
+				<nav class="uk-navbar-container uk-navbar-transparent uk-light" uk-navbar>
+					<div class="uk-navbar-left">
+						<a class="uk-icon-link" uk-icon="icon: arrow-left; ratio: 2" href="#"></a>
+					</div>
+
+					<div class="uk-navbar-center"><h4 class="m-title-page">Đặt tour du lịch</h4></div>
+
+					<div class="uk-navbar-right">
+						<a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-icon="ratio: 2"  uk-toggle="target: #mainSidebar"></a>
+					</div>
+				</nav>
+				<!-- End nav -->
+			</div>
+
+			<aside id="mainSidebar" uk-offcanvas="overlay: true; flip: true; mode: push;">
+				<div class="uk-offcanvas-bar">
+
+					<button class="uk-offcanvas-close" type="button" uk-close></button>
+
+					<ul class="uk-nav uk-nav-default uk-nav-parent-icon" uk-nav>
+            <li class="uk-nav-header m-text-primary">Header</li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: home"></span> Trang chủ</a></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: sign-in"></span> Đăng nhập</a></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: refresh"></span> Khôi phục đặt chỗ</a></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: commenting"></span> Hỗ trợ khách hàng</a></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: info"></span> Trợ giúp</a></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: world"></span> Quốc gia &amp; Ngôn ngữ</a></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: money"></span> Ngoại tệ</a></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: download"></span> Tải ứng dụng</a></li>
+
+            <li class="uk-nav-header m-text-primary">Dịch vụ</li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: tag"></span> Khuyến mãi</a></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: star"></span> Tour nổi bật</a></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: flight"></span> Vé máy bay</a></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: car"></span> Xe sân bay</a></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: bed"></span> Khách sạn</a></li>
+
+            <li class="uk-nav-divider uk-margin"></li>
+
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: info"></span> Về 8Trip</a></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: more"></span> Thông tin khác</a></li>
+        </ul>
+
+				</div>
+			</aside>
+			<!-- End #mainSidebar -->
+
+			<section class="uk-padding-muted m-bg-full-sticky">
+
+				<div class="uk-padding-small uk-margin-top">
+					<div class="uk-card-small uk-card-default uk-padding-small uk-margin-bottom">
+            <div class="m-group-text-media">
+              <p class=""><span uk-icon="icon: location; ratio: 0.9" class="uk-margin-small-right"></span>Địa điểm</p>
+              <input type="text" placeholder="Chọn điểm du lịch bạn muốn" class="uk-input" data-ref="from-place-1" uk-toggle="target: #offcanvas-city-1">
+            </div>
+
+            <div class="m-group-text-media">
+              <p class="uk-text-baseline"><span uk-icon="icon: calendar; ratio: 0.9" class="uk-margin-small-right"></span>Ngày đi</p>
+              <input class="uk-input" data-type="date" type="text" value="01/10/2017">
+            </div>
+					</div>
+
+					<div class="uk-padding-small uk-flex uk-flex-center">
+						<a class="uk-button m-button-secondary" href="form-result-one-way.html">Tìm kiếm tour</a>
+					</div>
+				</div>
+
+			</section>
+		</form>
+
+	</div>
+
+	<!-- Pick điểm đi -->
+	<div id="offcanvas-city-1" uk-offcanvas="overlay: false; mode: slide" class="m-offcanvas-city" data-target="from-place-1">
+    <div class="uk-offcanvas-bar">
+    	<button class="uk-offcanvas-close" type="button" uk-close></button>
+      <h4 class="uk-h4 uk-margin-remove-top">Chọn địa điểm đi</h4>
+
+      <div class="uk-flex uk-flex-between uk-margin-bottom">
+      	<div class="uk-form-controls uk-margin-small-right">
+      		<input type="text" class="uk-input uk-form-small" placeholder="Chọn địa điểm">
+      	</div>
+      	<button class="uk-button m-button-secondary uk-button-small">Chọn</button>
+      </div>
+
+      <div class="m-place-list">
+      	<div class="m-place">
+      		<h5 class="uk-text-uppercase m-text-secondary">Điểm đến phổ biến</h5>
+      		<ul class="uk-list">
+      			<li class="m-city-item">Bangkok</li>
+      			<li class="m-city-item">Singapore</li>
+      			<li class="m-city-item">Kuala Lumpur</li>
+      			<li class="m-city-item">Tokyo</li>
+      			<li class="m-city-item">Seoul</li>
+      			<li class="m-city-item">Quảng Châu</li>
+      			<li class="m-city-item">Hong Kong</li>
+      		</ul>
+      	</div>
+
+      	<hr>
+
+      	<div class="m-place">
+      		<h5 class="uk-text-uppercase m-text-secondary">Miền Bắc</h5>
+      		<ul class="uk-list">
+      			<li class="m-city-item">Hà Nội</li>
+      			<li class="m-city-item">Vinh</li>
+      			<li class="m-city-item">Hải Phòng</li>
+      		</ul>
+      	</div>
+
+      	<hr>
+
+      	<div class="m-place">
+      		<h5 class="uk-text-uppercase m-text-secondary">Miền Trung</h5>
+      		<ul class="uk-list">
+      			<li class="m-city-item">Thanh Hoá</li>
+      			<li class="m-city-item">Đà Nẵng</li>
+      			<li class="m-city-item">Huế</li>
+      			<li class="m-city-item">Đồng Hới</li>
+      			<li class="m-city-item">Tuy Hoà</li>
+      			<li class="m-city-item">Chu Lai</li>
+      			<li class="m-city-item">Pleiku</li>
+      		</ul>
+      	</div>
+
+      	<hr>
+
+      	<div class="m-place">
+      		<h5 class="uk-text-uppercase m-text-secondary">Miền Nam</h5>
+      		<ul class="uk-list">
+      			<li class="m-city-item">Hồ Chí Minh</li>
+      			<li class="m-city-item">Nha Trang</li>
+      			<li class="m-city-item">Đà Lạt</li>
+      			<li class="m-city-item">Phú Quốc</li>
+      			<li class="m-city-item">Cần Thơ</li>
+      			<li class="m-city-item">Côn Đảo</li>
+      			<li class="m-city-item">Rạch Giá</li>
+      			<li class="m-city-item">Cà Mau</li>
+      			<li class="m-city-item">Buôn Ma Thuột</li>
+      			<li class="m-city-item">Quy Nhơn</li>
+      		</ul>
+      	</div>
+      </div>
+
+    </div>
+	</div>
+
+
+	<!-- Script -->
+	<script src="assets/vendor/jquery.min.js"></script>
+	<script src="assets/vendor/uikit/js/uikit.min.js"></script>
+	<script src="assets/vendor/uikit/js/uikit-icons.min.js"></script>
+	<script src="assets/vendor/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+</html>
