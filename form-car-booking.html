@@ -85,13 +85,13 @@
 							<div class="uk-width-1-2">
 								<label class="uk-form-label">Ngày đi</label>
 								<div class="uk-form-controls">
-								  <input class="uk-input" data-type="date" type="text" value="01/10/2017">
+								  <input class="uk-input m-select-datepicker" type="text" data-date="day-out" uk-toggle="target: #offcanvas-date-1">
 								</div>
 							</div>
 							<div class="uk-width-1-2 uk-margin-small-left" data-ref="to-date-search">
 								<label class="uk-form-label">Ngày về</label>
 								<div class="uk-form-controls">
-								  <input class="uk-input" data-type="date" type="text" value="01/10/2017">
+								  <input class="uk-input m-select-datepicker" type="text" data-date="day-on" uk-toggle="target: #offcanvas-date-2">
 								</div>
 							</div>
 						</div>
@@ -149,6 +149,21 @@
 		</form>
 
 	</div>
+
+	<!-- Pick date -->
+  <div id="offcanvas-date-1" uk-offcanvas class="m-offcanvas-date">
+    <div class="uk-offcanvas-bar">
+      <h4 class="uk-h4 uk-margin-remove-top uk-text-center">Chọn ngày đi</h4>
+      <div id="datepicker" class="m-datepicker"></div>
+    </div>
+  </div>
+
+  <div id="offcanvas-date-2" uk-offcanvas class="m-offcanvas-date">
+    <div class="uk-offcanvas-bar">
+      <h4 class="uk-h4 uk-margin-remove-top uk-text-center">Chọn ngày về</h4>
+      <div id="datepicker-2" class="m-datepicker"></div>
+    </div>
+  </div>
 
 
 	<!-- Script -->
