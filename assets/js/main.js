@@ -182,30 +182,33 @@ $(function() {
 		input.blur();
 	});
 
-	UIkit.util.on('.m-offcanvas-date', 'show', function(event, element) {
-		var offcanvas = $(element.$el);
-		var dateToday = new Date();
-		var datepicker = $('.m-datepicker');
+	var selectionDatepicker = $('.m-offcanvas-date');
+	if (selectionDatepicker.length > 0) {
+		selectionDatepicker.map(function(index, sDatepicker) {
+			UIkit.util.on(sDatepicker, 'show', function(event, element) {
+				var offcanvas = $(element.$el);
+				var dateToday = new Date();
+				var datepicker = $('.m-datepicker');
 
-		if (datepicker.length > 0 && typeof $.datepicker !== undefined) {
-			var dates = datepicker.datepicker({
-				defaultDate: '+1w',
-				dateFormat: 'dd/mm/yy',
-				minDate: dateToday,
-				onSelect: function(selectedDate, self) {
-					var option 		= $(input).data('date') === 'day-out' ? 'minDate' : 'maxDate',
-							instance 	= $(this).data('datepicker'),
-							date 			= $.datepicker.parseDate(instance.settings.dateFormat || $.datepicker._defaults.dateFormat, selectedDate, instance.settings);
-							dates.not(this).datepicker('option', option, date);
-					input.val(selectedDate);
-
-					// Phải gọi lại như này vì UIkit chỉ nhận 1 đối tượng duy nhất. class được sử dụng như 1 ID.
-					var offCanvasParent = $(this).closest('[uk-offcanvas]');
-					UIkit.offcanvas(offCanvasParent).hide();
+				if (datepicker.length > 0 && typeof $.datepicker !== undefined) {
+					var dates = datepicker.datepicker({
+						defaultDate: '+1w',
+						dateFormat: 'dd/mm/yy',
+						minDate: dateToday,
+						onSelect: function(selectedDate, self) {
+							var option 		= $(input).data('date') === 'day-out' ? 'minDate' : 'maxDate',
+									instance 	= $(this).data('datepicker'),
+									date 			= $.datepicker.parseDate(instance.settings.dateFormat || $.datepicker._defaults.dateFormat, selectedDate, instance.settings);
+									dates.not(this).datepicker('option', option, date);
+							input.val(selectedDate);
+							UIkit.offcanvas(offcanvas).hide();
+						}
+					});
 				}
 			});
-		}
-	});
+		})
+		
+	}
 });
 
 UIkit.modal('[uk-modal]', {
