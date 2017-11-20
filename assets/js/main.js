@@ -167,6 +167,8 @@ $(function() {
 });
 
 // Datepicker
+
+// Reset để tránh nhận event của uikit javascript
 $(document).on('click', '.ui-datepicker-next', function(e) {
 	e.preventDefault();
 });
@@ -211,23 +213,17 @@ $(function() {
 	}
 });
 
-UIkit.modal('[uk-modal]', {
-	'sel-close': '.uk-modal-close-outside, .uk-modal-close'
+// Pick another date
+$(function() {
+	var listOtherDate = $('.m-list-ticket-date');
+	if (listOtherDate.length > 0) {
+		listOtherDate.find('li').map(function(index, li) {
+			$(li).click(function() {
+				// Do anything before close off canvas
+				 
+				var offCanvas = $(li).closest('[uk-offcanvas]');
+				UIkit.offcanvas(offCanvas).hide();
+			});
+		});
+	}
 });
-
-// $(function() {
-// 	var dateToday = new Date();
-// 	if (datepicker.length > 0 && typeof $.datepicker !== undefined) {
-// 		var dates = datepicker.datepicker({
-// 			defaultDate: '+1w',
-// 			dateFormat: 'dd/mm/yy',
-// 			minDate: dateToday,
-// 			onSelect: function(selectedDate) {
-// 				var option = $(this).data('date') === 'day-out' ? 'minDate' : 'maxDate',
-// 						instance = $(this).data('datepicker'),
-// 						date = $.datepicker.parseDate(instance.settings.dateFormat || $.datepicker._defaults.dateFormat, selectedDate, instance.settings);
-// 				dates.not(this).datepicker('option', option, date);
-// 			}
-// 		});
-// 	}
-// });

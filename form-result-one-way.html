@@ -42,100 +42,12 @@
 					</div>
 				</div>
 
-				<div class="uk-padding-small" id="m-form-search-2" aria-hidden="true" hidden>
-					<hr class="uk-margin-remove-bottom">
-					<br><br>
-
-					<div class="m-formsearch-place">
-						<div class="m-group-text-media">
-							<p class="">Điểm đi</p>
-							<input type="text" placeholder="Chạm để chọn điểm đi" class="m-insert-place m-input-hiding uk-input" data-ref="from-place-1" uk-toggle="target: #offcanvas-city-1">
-							<!-- <p class="uk-text-small">Chạm để chọn điểm đi</p> -->
-						</div>
-
-						<div class="m-group-text-media">
-							<p class="">Điểm đến</p>
-							<input type="text" placeholder="Chạm để chọn điểm tới" class="m-insert-place m-input-hiding uk-input"  data-ref="to-place-1" uk-toggle="target: #offcanvas-city-2">
-							<!-- <p class="uk-text-small">Chạm để chọn điểm đến</p> -->
-						</div>
-
-						<div class="m-toggle-place"><button class="m-btn-switch m-btn-switch-line" data-target-1="to-place-1" data-target-2="from-place-1"><img src="assets/images/ic_arrow_left_right.svg" alt="icon"></button></div>
-					</div>
-
-					<div class="uk-margin-small uk-grid-small uk-padding-small uk-padding-remove-vertical uk-child-width-auto uk-grid">
-	          <label class="m-text-white"><input class="uk-checkbox uk-margin-small-right" type="checkbox"> Khứ hồi</label>
-	        </div>
-
-	        <div class="uk-card-small uk-padding-small">
-						<div class="uk-flex">
-							<div class="uk-width-1-2">
-								<label class="uk-form-label">Ngày đi</label>
-								<div class="uk-form-controls">
-								  <input class="uk-input" data-type="date" type="text" value="01/10/2017" data-ref="day-out">
-								</div>
-							</div>
-							<div class="uk-width-1-2 uk-margin-left" data-ref="to-date-search">
-								<label class="uk-form-label">Ngày về</label>
-								<div class="uk-form-controls">
-								  <input class="uk-input" data-type="date" type="text" value="01/10/2017" data-ref="day-on">
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="uk-card-small uk-padding-small">
-						<div class="uk-flex">
-							<label class="uk-form-label uk-flex uk-flex-middle uk-width-1-2">Hạng ghế</label>
-							<div class="uk-form-controls uk-width-1-2">
-							  <select class="uk-select m-pl-15">
-									<option>Phổ thông</option>
-									<option>Thương gia</option>
-							  </select>
-							</div>
-						</div>
-					</div>
-
-					<div class="uk-card-small uk-padding-small">
-						<div class="uk-margin uk-flex">
-							<label class="uk-form-label uk-width-1-2">Người lớn</label>
-							<div>
-								<span class="m-input-number-decrement">–</span>
-								<input class="m-input-number" type="text" value="1" min="0" max="10">
-								<span class="m-input-number-increment">+</span>
-							</div>
-						</div>
-
-						<div class="uk-margin uk-flex">
-							<label class="uk-form-label uk-width-1-2">Trẻ em</label>
-							<div>
-								<span class="m-input-number-decrement">–</span>
-								<input class="m-input-number" type="text" value="0" min="0" max="10">
-								<span class="m-input-number-increment">+</span>
-							</div>
-						</div>
-
-						<div class="uk-flex">
-							<label class="uk-form-label uk-width-1-2">Em bé</label>
-							<div>
-								<span class="m-input-number-decrement">–</span>
-								<input class="m-input-number" type="text" value="0" min="0" max="10">
-								<span class="m-input-number-increment">+</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="uk-padding-small uk-flex uk-flex-center">
-						<a class="uk-button m-button-secondary" href="form-result-one-way.html">Tìm chuyến bay</a>
-					</div>
-
-				</div>
-
 				<hr class="uk-margin-remove-bottom">
 
 				<div class="uk-padding-small uk-flex uk-flex-around">
-					<a href="#m-form-search-2" class="uk-button uk-button-text" uk-toggle="target: #m-form-search-2; queued: true; animation: uk-animation-slide-top; ">Đổi tìm kiếm</a>
-					<a href="#" class="uk-button uk-button-text">Vé ngày khác</a>
-					<a href="#" class="uk-button uk-button-text">Tìm nâng cao</a>
+					<a href="#m-filter-sort" class="uk-button uk-button-text" uk-toggle>Sắp xếp</a>
+					<a href="#m-filter-date" class="uk-button uk-button-text" uk-toggle>Vé ngày khác</a>
+					<a href="#m-filter-upgrade" class="uk-button uk-button-text" uk-toggle>Tìm nâng cao</a>
 				</div>
 			</div>
 
@@ -335,156 +247,6 @@
 			</section>
 		</form>
 
-	</div>
-
-	<!-- Pick điểm đi -->
-	<div id="offcanvas-city-1" uk-offcanvas="overlay: false; mode: slide" class="m-offcanvas-city" data-target="from-place-1">
-    <div class="uk-offcanvas-bar">
-    	<button class="uk-offcanvas-close" type="button" uk-close></button>
-      <h4 class="uk-h4 uk-margin-remove-top">Chọn địa điểm đi</h4>
-
-      <div class="uk-flex uk-flex-between uk-margin-bottom">
-      	<div class="uk-form-controls uk-margin-small-right">
-      		<input type="text" class="uk-input uk-form-small" placeholder="Chọn địa điểm">
-      	</div>
-      	<button class="uk-button m-button-secondary uk-button-small">Chọn</button>
-      </div>
-
-      <div class="m-place-list">
-      	<div class="m-place">
-      		<h5 class="uk-text-uppercase m-text-secondary">Điểm đến phổ biến</h5>
-      		<ul class="uk-list">
-      			<li class="m-city-item">Bangkok</li>
-      			<li class="m-city-item">Singapore</li>
-      			<li class="m-city-item">Kuala Lumpur</li>
-      			<li class="m-city-item">Tokyo</li>
-      			<li class="m-city-item">Seoul</li>
-      			<li class="m-city-item">Quảng Châu</li>
-      			<li class="m-city-item">Hong Kong</li>
-      		</ul>
-      	</div>
-
-      	<hr>
-
-      	<div class="m-place">
-      		<h5 class="uk-text-uppercase m-text-secondary">Miền Bắc</h5>
-      		<ul class="uk-list">
-      			<li class="m-city-item">Hà Nội</li>
-      			<li class="m-city-item">Vinh</li>
-      			<li class="m-city-item">Hải Phòng</li>
-      		</ul>
-      	</div>
-
-      	<hr>
-
-      	<div class="m-place">
-      		<h5 class="uk-text-uppercase m-text-secondary">Miền Trung</h5>
-      		<ul class="uk-list">
-      			<li class="m-city-item">Thanh Hoá</li>
-      			<li class="m-city-item">Đà Nẵng</li>
-      			<li class="m-city-item">Huế</li>
-      			<li class="m-city-item">Đồng Hới</li>
-      			<li class="m-city-item">Tuy Hoà</li>
-      			<li class="m-city-item">Chu Lai</li>
-      			<li class="m-city-item">Pleiku</li>
-      		</ul>
-      	</div>
-
-      	<hr>
-
-      	<div class="m-place">
-      		<h5 class="uk-text-uppercase m-text-secondary">Miền Nam</h5>
-      		<ul class="uk-list">
-      			<li class="m-city-item">Hồ Chí Minh</li>
-      			<li class="m-city-item">Nha Trang</li>
-      			<li class="m-city-item">Đà Lạt</li>
-      			<li class="m-city-item">Phú Quốc</li>
-      			<li class="m-city-item">Cần Thơ</li>
-      			<li class="m-city-item">Côn Đảo</li>
-      			<li class="m-city-item">Rạch Giá</li>
-      			<li class="m-city-item">Cà Mau</li>
-      			<li class="m-city-item">Buôn Ma Thuột</li>
-      			<li class="m-city-item">Quy Nhơn</li>
-      		</ul>
-      	</div>
-      </div>
-
-    </div>
-	</div>
-
-	<!-- Pick điểm tới -->
-	<div id="offcanvas-city-2" uk-offcanvas="overlay: false; mode: slide" class="m-offcanvas-city" data-target="to-place-1">
-    <div class="uk-offcanvas-bar">
-    	<button class="uk-offcanvas-close" type="button" uk-close></button>
-      <h4 class="uk-h4 uk-margin-remove-top">Chọn địa điểm tới</h4>
-
-      <div class="uk-flex uk-flex-between uk-margin-bottom">
-      	<div class="uk-form-controls uk-margin-small-right">
-      		<input type="text" class="uk-input uk-form-small" placeholder="Chọn địa điểm">
-      	</div>
-      	<button class="uk-button m-button-secondary uk-button-small">Chọn</button>
-      </div>
-
-      <div class="m-place-list">
-      	<div class="m-place">
-      		<h5 class="uk-text-uppercase m-text-secondary">Điểm đến phổ biến</h5>
-      		<ul class="uk-list">
-      			<li class="m-city-item">Bangkok</li>
-      			<li class="m-city-item">Singapore</li>
-      			<li class="m-city-item">Kuala Lumpur</li>
-      			<li class="m-city-item">Tokyo</li>
-      			<li class="m-city-item">Seoul</li>
-      			<li class="m-city-item">Quảng Châu</li>
-      			<li class="m-city-item">Hong Kong</li>
-      		</ul>
-      	</div>
-
-      	<hr>
-
-      	<div class="m-place">
-      		<h5 class="uk-text-uppercase m-text-secondary">Miền Bắc</h5>
-      		<ul class="uk-list">
-      			<li class="m-city-item">Hà Nội</li>
-      			<li class="m-city-item">Vinh</li>
-      			<li class="m-city-item">Hải Phòng</li>
-      		</ul>
-      	</div>
-
-      	<hr>
-
-      	<div class="m-place">
-      		<h5 class="uk-text-uppercase m-text-secondary">Miền Trung</h5>
-      		<ul class="uk-list">
-      			<li class="m-city-item">Thanh Hoá</li>
-      			<li class="m-city-item">Đà Nẵng</li>
-      			<li class="m-city-item">Huế</li>
-      			<li class="m-city-item">Đồng Hới</li>
-      			<li class="m-city-item">Tuy Hoà</li>
-      			<li class="m-city-item">Chu Lai</li>
-      			<li class="m-city-item">Pleiku</li>
-      		</ul>
-      	</div>
-
-      	<hr>
-
-      	<div class="m-place">
-      		<h5 class="uk-text-uppercase m-text-secondary">Miền Nam</h5>
-      		<ul class="uk-list">
-      			<li class="m-city-item">Hồ Chí Minh</li>
-      			<li class="m-city-item">Nha Trang</li>
-      			<li class="m-city-item">Đà Lạt</li>
-      			<li class="m-city-item">Phú Quốc</li>
-      			<li class="m-city-item">Cần Thơ</li>
-      			<li class="m-city-item">Côn Đảo</li>
-      			<li class="m-city-item">Rạch Giá</li>
-      			<li class="m-city-item">Cà Mau</li>
-      			<li class="m-city-item">Buôn Ma Thuột</li>
-      			<li class="m-city-item">Quy Nhơn</li>
-      		</ul>
-      	</div>
-      </div>
-
-    </div>
 	</div>
 
 	<!-- Modal detail: Chiều đi -->
@@ -1060,6 +822,115 @@
 			</div>
 		</div>
 	</section>
+
+	<!-- Lọc nâng cao -->
+	<section id="m-filter-sort" uk-offcanvas="overlay: false; mode: slide">
+		<div class="uk-offcanvas-bar m-bg-full-sticky">
+			<button class="uk-offcanvas-close" type="button" uk-close></button>
+			<h4 class="uk-h4 uk-margin-remove-top">Sắp xếp</h4>
+			<div class="m-filter-list">
+				<div class="m-filter">
+					<ul class="uk-list">
+						<li class="m-city-item">
+							<label><input class="uk-radio uk-margin-small-right" type="radio" name="sort"> Buổi sáng (04:00 - 11:00)</label>
+						</li>
+						<li class="m-city-item">
+							<label><input class="uk-radio uk-margin-small-right" type="radio" name="sort"> Buổi chiều (11:00 - 15:00)</label>
+						</li>
+						<li class="m-city-item">
+							<label><input class="uk-radio uk-margin-small-right" type="radio" name="sort"> Buổi chiều tối (15:00 - 18:30)</label>
+						</li>
+						<li class="m-city-item">
+							<label><input class="uk-radio uk-margin-small-right" type="radio" name="sort"> Buổi tối (18:30 - 04:00)</label>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Sắp xếp -->
+	<section id="m-filter-upgrade" uk-offcanvas="overlay: false; mode: slide">
+		<div class="uk-offcanvas-bar m-bg-full-sticky">
+			<button class="uk-offcanvas-close" type="button" uk-close></button>
+			<h4 class="uk-h4 uk-margin-remove-top">Tìm nâng cao</h4>
+			<div class="m-filter-list">
+				<div class="m-filter">
+					<h5 class="uk-text-uppercase m-text-secondary">Lọc theo thời gian</h5>
+					<ul class="uk-list">
+						<li class="m-city-item">
+							<label><input class="uk-checkbox uk-margin-small-right" type="checkbox"> Buổi sáng (04:00 - 11:00)</label>
+						</li>
+						<li class="m-city-item">
+							<label><input class="uk-checkbox uk-margin-small-right" type="checkbox"> Buổi chiều (11:00 - 15:00)</label>
+						</li>
+						<li class="m-city-item">
+							<label><input class="uk-checkbox uk-margin-small-right" type="checkbox"> Buổi chiều tối (15:00 - 18:30)</label>
+						</li>
+						<li class="m-city-item">
+							<label><input class="uk-checkbox uk-margin-small-right" type="checkbox"> Buổi tối (18:30 - 04:00)</label>
+						</li>
+					</ul>
+				</div>
+
+				<hr>
+				
+				<div class="m-filter">
+					<h5 class="uk-text-uppercase m-text-secondary">Lọc theo thời gian</h5>
+						<ul class="uk-list">
+							<li class="m-city-item">
+								<label><input class="uk-checkbox uk-margin-small-right" type="checkbox"> Buổi sáng (04:00 - 11:00)</label>
+							</li>
+							<li class="m-city-item">
+								<label><input class="uk-checkbox uk-margin-small-right" type="checkbox"> Buổi chiều (11:00 - 15:00)</label>
+							</li>
+							<li class="m-city-item">
+								<label><input class="uk-checkbox uk-margin-small-right" type="checkbox"> Buổi chiều tối (15:00 - 18:30)</label>
+							</li>
+							<li class="m-city-item">
+								<label><input class="uk-checkbox uk-margin-small-right" type="checkbox"> Buổi tối (18:30 - 04:00)</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Vé ngày khác -->
+	<section id="m-filter-date" uk-offcanvas="overlay: false; mode: slide">
+		<div class="uk-offcanvas-bar m-bg-full-sticky">
+			<button class="uk-offcanvas-close" type="button" uk-close></button>
+			<h4 class="uk-h4 uk-margin-remove-top">Vé ngày khác</h4>
+			<ul class="uk-list uk-list-divider uk-text-small m-list-ticket-date">
+		    <li>
+		    	<div class="uk-flex uk-flex-between">
+		    		<span>Thứ 2, 20/11/2017</span>
+		    		<span class="m-text-highlight uk-text-bold">2.493.829 VND</span>
+		    	</div>
+		    </li>
+		    <li>
+		    	<div class="uk-flex uk-flex-between">
+		    		<span>Thứ 3, 20/11/2017</span>
+		    		<span class="m-text-highlight uk-text-bold">2.493.829 VND</span>
+		    	</div>
+		    </li>
+		    <li>
+		    	<div class="uk-flex uk-flex-between">
+		    		<span>Thứ 4, 20/11/2017</span>
+		    		<span class="m-text-highlight uk-text-bold">2.493.829 VND</span>
+		    	</div>
+		    </li>
+		    <li>
+		    	<div class="uk-flex uk-flex-between">
+		    		<span>Thứ 5, 20/11/2017</span>
+		    		<span class="m-text-highlight uk-text-bold">2.493.829 VND</span>
+		    	</div>
+		    </li>
+			</ul>
+		</div>
+	</section>
+
 
 
 	<!-- Script -->

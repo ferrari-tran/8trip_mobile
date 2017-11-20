@@ -45,9 +45,9 @@
 				<hr class="uk-margin-remove-bottom">
 
 				<div class="uk-padding-small uk-flex uk-flex-around">
-					<a href="#" class="uk-button uk-button-text">Đổi tìm kiếm</a>
-					<a href="#" class="uk-button uk-button-text">Vé ngày khác</a>
-					<a href="#" class="uk-button uk-button-text">Tìm nâng cao</a>
+					<a href="#m-filter-sort" class="uk-button uk-button-text" uk-toggle>Sắp xếp</a>
+					<a href="#m-filter-date" class="uk-button uk-button-text" uk-toggle>Vé ngày khác</a>
+					<a href="#m-filter-upgrade" class="uk-button uk-button-text" uk-toggle>Tìm nâng cao</a>
 				</div>
 			</div>
 
@@ -433,6 +433,114 @@
 					</div>
 				</div>
 			</div>
+		</div>
+	</section>
+
+	<!-- Lọc nâng cao -->
+	<section id="m-filter-sort" uk-offcanvas="overlay: false; mode: slide">
+		<div class="uk-offcanvas-bar m-bg-full-sticky">
+			<button class="uk-offcanvas-close" type="button" uk-close></button>
+			<h4 class="uk-h4 uk-margin-remove-top">Sắp xếp</h4>
+			<div class="m-filter-list">
+				<div class="m-filter">
+					<ul class="uk-list">
+						<li class="m-city-item">
+							<label><input class="uk-radio uk-margin-small-right" type="radio" name="sort"> Buổi sáng (04:00 - 11:00)</label>
+						</li>
+						<li class="m-city-item">
+							<label><input class="uk-radio uk-margin-small-right" type="radio" name="sort"> Buổi chiều (11:00 - 15:00)</label>
+						</li>
+						<li class="m-city-item">
+							<label><input class="uk-radio uk-margin-small-right" type="radio" name="sort"> Buổi chiều tối (15:00 - 18:30)</label>
+						</li>
+						<li class="m-city-item">
+							<label><input class="uk-radio uk-margin-small-right" type="radio" name="sort"> Buổi tối (18:30 - 04:00)</label>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Sắp xếp -->
+	<section id="m-filter-upgrade" uk-offcanvas="overlay: false; mode: slide">
+		<div class="uk-offcanvas-bar m-bg-full-sticky">
+			<button class="uk-offcanvas-close" type="button" uk-close></button>
+			<h4 class="uk-h4 uk-margin-remove-top">Tìm nâng cao</h4>
+			<div class="m-filter-list">
+				<div class="m-filter">
+					<h5 class="uk-text-uppercase m-text-secondary">Lọc theo thời gian</h5>
+					<ul class="uk-list">
+						<li class="m-city-item">
+							<label><input class="uk-checkbox uk-margin-small-right" type="checkbox"> Buổi sáng (04:00 - 11:00)</label>
+						</li>
+						<li class="m-city-item">
+							<label><input class="uk-checkbox uk-margin-small-right" type="checkbox"> Buổi chiều (11:00 - 15:00)</label>
+						</li>
+						<li class="m-city-item">
+							<label><input class="uk-checkbox uk-margin-small-right" type="checkbox"> Buổi chiều tối (15:00 - 18:30)</label>
+						</li>
+						<li class="m-city-item">
+							<label><input class="uk-checkbox uk-margin-small-right" type="checkbox"> Buổi tối (18:30 - 04:00)</label>
+						</li>
+					</ul>
+				</div>
+
+				<hr>
+				
+				<div class="m-filter">
+					<h5 class="uk-text-uppercase m-text-secondary">Lọc theo thời gian</h5>
+						<ul class="uk-list">
+							<li class="m-city-item">
+								<label><input class="uk-checkbox uk-margin-small-right" type="checkbox"> Buổi sáng (04:00 - 11:00)</label>
+							</li>
+							<li class="m-city-item">
+								<label><input class="uk-checkbox uk-margin-small-right" type="checkbox"> Buổi chiều (11:00 - 15:00)</label>
+							</li>
+							<li class="m-city-item">
+								<label><input class="uk-checkbox uk-margin-small-right" type="checkbox"> Buổi chiều tối (15:00 - 18:30)</label>
+							</li>
+							<li class="m-city-item">
+								<label><input class="uk-checkbox uk-margin-small-right" type="checkbox"> Buổi tối (18:30 - 04:00)</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Vé ngày khác -->
+	<section id="m-filter-date" uk-offcanvas="overlay: false; mode: slide">
+		<div class="uk-offcanvas-bar m-bg-full-sticky">
+			<button class="uk-offcanvas-close" type="button" uk-close></button>
+			<h4 class="uk-h4 uk-margin-remove-top">Vé ngày khác</h4>
+			<ul class="uk-list uk-list-divider uk-text-small m-list-ticket-date">
+		    <li>
+		    	<div class="uk-flex uk-flex-between">
+		    		<span>Thứ 2, 20/11/2017</span>
+		    		<span class="m-text-highlight uk-text-bold">2.493.829 VND</span>
+		    	</div>
+		    </li>
+		    <li>
+		    	<div class="uk-flex uk-flex-between">
+		    		<span>Thứ 3, 20/11/2017</span>
+		    		<span class="m-text-highlight uk-text-bold">2.493.829 VND</span>
+		    	</div>
+		    </li>
+		    <li>
+		    	<div class="uk-flex uk-flex-between">
+		    		<span>Thứ 4, 20/11/2017</span>
+		    		<span class="m-text-highlight uk-text-bold">2.493.829 VND</span>
+		    	</div>
+		    </li>
+		    <li>
+		    	<div class="uk-flex uk-flex-between">
+		    		<span>Thứ 5, 20/11/2017</span>
+		    		<span class="m-text-highlight uk-text-bold">2.493.829 VND</span>
+		    	</div>
+		    </li>
+			</ul>
 		</div>
 	</section>
 
