@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=414, maximum-scale=1">
+	<title>Home</title>
+
+	<!-- Framework UI Kit -->
+	<link rel="stylesheet" href="assets/vendor/uikit/css/uikit.min.css">
+	<link rel="stylesheet" href="assets/vendor/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+	<link rel="stylesheet" href="assets/vendor/jquery-ui-1.12.1.custom/jquery-ui.structure.min.css">
+	<link rel="stylesheet" href="assets/vendor/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css">
+	<link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body class="uk-offcanvas-content">
+
+	<div class="m-wrapper">
+		<form class="m-form uk-background-muted">
+			<div class="m-bg-fly-to-sky">
+				<nav class="uk-navbar-container uk-navbar-transparent uk-light" uk-navbar>
+					<div class="uk-navbar-left">
+						<a class="uk-icon-link" uk-icon="icon: arrow-left; ratio: 2" href="#"></a>
+					</div>
+
+					<div class="uk-navbar-center">
+						<a href="http://8trip.vn" class="uk-text-center">
+							<img src="assets/images/logo_8trip_white.png" alt="8trip.vn" class="uk-width-1-2">
+						</a>
+					</div>
+
+					<div class="uk-navbar-right">
+						<a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-icon="ratio: 2"  uk-toggle="target: #mainSidebar"></a>
+					</div>
+				</nav>
+				<!-- End nav -->
+
+				<div class="m-bg-full-sticky uk-padding-small uk-flex uk-flex-middle uk-flex-center uk-light uk-flex-wrap">
+					<p class="uk-text-center uk-margin-large">Đôi 2-3 dòng giới thiệu về 8trip. Tốt nhất là để 3 dòng cho đẹp chứ 2 dòng nó hơi bị cụt.</p>
+
+	        <section class="uk-width-1-1">
+	          <ul class="m-list-heading uk-list">
+	          	<li><a href="form-search-ticket.html">Vé máy bay</a></li>
+	          	<li><a href="#">Khách sạn</a></li>
+	          	<li><a href="#">Xe sân bay</a></li>
+	          	<li><a href="form-booking-tour.html">Tour</a></li>
+	          </ul>
+	        </section>
+
+	        <main>
+	        	<article class="uk-card uk-card-body">
+		        	<p class="uk-text-center">
+		        		Hotline:<br>
+		        		<a href="tel:0909-475-688" class="uk-h2 m-text-secondary">0909 475 688</a>
+		        	</p>
+	        	</article>
+	        </main>
+
+	        <footer class="m-position-bottom uk-width-1-1">
+	        	<hr>
+          	<address>
+          		Địa chỉ: 567A Lạc Long Quân, Phường Xuân La, Quận Tây Hồ, TP.Hà Nội<br>
+          		Email: 8trip@ssmedia.vn
+          	</address>
+          </footer>
+        </div>
+				
+			</div>
+
+			<aside id="mainSidebar" uk-offcanvas="overlay: true; flip: true; mode: push;">
+				<div class="uk-offcanvas-bar">
+
+					<button class="uk-offcanvas-close" type="button" uk-close></button>
+
+					<ul class="uk-nav uk-nav-default uk-nav-parent-icon" uk-nav>
+            <li class="uk-nav-header m-text-primary">Header</li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: home"></span> Trang chủ</a></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: sign-in"></span> Đăng nhập</a></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: refresh"></span> Khôi phục đặt chỗ</a></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: commenting"></span> Hỗ trợ khách hàng</a></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: info"></span> Trợ giúp</a></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: world"></span> Quốc gia &amp; Ngôn ngữ</a></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: money"></span> Ngoại tệ</a></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: download"></span> Tải ứng dụng</a></li>
+
+            <li class="uk-nav-header m-text-primary">Dịch vụ</li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: tag"></span> Khuyến mãi</a></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: star"></span> Tour nổi bật</a></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: flight"></span> Vé máy bay</a></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: car"></span> Xe sân bay</a></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: bed"></span> Khách sạn</a></li>
+
+            <li class="uk-nav-divider uk-margin"></li>
+
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: info"></span> Về 8Trip</a></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: more"></span> Thông tin khác</a></li>
+        </ul>
+
+				</div>
+			</aside>
+			<!-- End #mainSidebar -->
+		</form>
+
+	</div>
+
+
+	<!-- Script -->
+	<script src="assets/vendor/jquery.min.js"></script>
+	<script src="assets/vendor/uikit/js/uikit.min.js"></script>
+	<script src="assets/vendor/uikit/js/uikit-icons.min.js"></script>
+	<script src="assets/vendor/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+</html>

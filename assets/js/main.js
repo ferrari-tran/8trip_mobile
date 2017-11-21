@@ -181,6 +181,7 @@ $(function() {
 	var input;
 	$('.m-select-datepicker').click(function(e) {
 		input = $(e.target);
+		console.log(input);
 		input.blur();
 	});
 
@@ -188,7 +189,6 @@ $(function() {
 	if (selectionDatepicker.length > 0) {
 		selectionDatepicker.map(function(index, sDatepicker) {
 			UIkit.util.on(sDatepicker, 'show', function(event, element) {
-				var offcanvas = $(element.$el);
 				var dateToday = new Date();
 				var datepicker = $('.m-datepicker');
 
@@ -203,7 +203,9 @@ $(function() {
 									date 			= $.datepicker.parseDate(instance.settings.dateFormat || $.datepicker._defaults.dateFormat, selectedDate, instance.settings);
 									dates.not(this).datepicker('option', option, date);
 							input.val(selectedDate);
-							UIkit.offcanvas(offcanvas).hide();
+
+							var offCanvas = $(this).closest('[uk-offcanvas]');
+							UIkit.offcanvas(offCanvas).hide();
 						}
 					});
 				}
