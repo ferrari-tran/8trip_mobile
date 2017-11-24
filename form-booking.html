@@ -8,6 +8,9 @@
 
 	<!-- Framework UI Kit -->
 	<link rel="stylesheet" href="assets/vendor/uikit/css/uikit.min.css">
+	<link rel="stylesheet" href="assets/vendor/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+	<link rel="stylesheet" href="assets/vendor/jquery-ui-1.12.1.custom/jquery-ui.structure.min.css">
+	<link rel="stylesheet" href="assets/vendor/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css">
 	<link rel="stylesheet" href="assets/css/style.min.css">
 </head>
 <body>
@@ -70,8 +73,12 @@
 					<fieldset class="uk-fieldset uk-margin">
 						<legend class="uk-legend">1. Người liên hệ</legend>
 						<div class="uk-card uk-margin uk-grid-small" uk-grid>
-							<div class="uk-width-1-1">
-								<label class="uk-margin-remove uk-text-small">Họ và tên:</label>
+							<div class="uk-width-1-2">
+								<label class="uk-margin-remove uk-text-small">Họ và tên đệm:<span class="m-text-highlight">*</span></label>
+								<input type="text" class="uk-input">
+							</div>
+							<div class="uk-width-1-2">
+								<label class="uk-margin-remove uk-text-small">Tên:<span class="m-text-highlight">*</span></label>
 								<input type="text" class="uk-input">
 							</div>
 							<div class="uk-width-1-1">
@@ -90,8 +97,12 @@
 						<div class="uk-card uk-margin uk-margin-medium-bottom">
 							<p class="uk-label m-label-secondary">Người lớn 1</p>
 							<div class="uk-grid-small" uk-grid>
-								<div class="uk-width-1-1">
-									<label class="uk-margin-remove uk-text-small">Họ và tên:</label>
+								<div class="uk-width-1-2">
+									<label class="uk-margin-remove uk-text-small">Họ và tên đệm:</label>
+									<input type="text" class="uk-input">
+								</div>
+								<div class="uk-width-1-2">
+									<label class="uk-margin-remove uk-text-small">Tên:</label>
 									<input type="text" class="uk-input">
 								</div>
 								<div class="uk-width-2-3">
@@ -126,13 +137,17 @@
 						<div class="uk-card uk-margin uk-margin-medium-bottom">
 							<p class="uk-label m-label-secondary">Em bé 1</p>
 							<div class="uk-grid-small" uk-grid>
-								<div class="uk-width-1-1">
-									<label class="uk-margin-remove uk-text-small">Họ và tên:</label>
+								<div class="uk-width-1-2">
+									<label class="uk-margin-remove uk-text-small">Họ và tên đệm:</label>
+									<input type="text" class="uk-input">
+								</div>
+								<div class="uk-width-1-2">
+									<label class="uk-margin-remove uk-text-small">Tên:</label>
 									<input type="text" class="uk-input">
 								</div>
 								<div class="uk-width-1-1">
 									<label class="uk-margin-remove uk-text-small">Ngày sinh:</label>
-									<input type="date" class="uk-input">
+									<input class="uk-input m-select-datepicker" type="text" data-date="day-out" uk-toggle="target: #offcanvas-date-1">
 								</div>
 							</div>
 						</div>
@@ -285,11 +300,20 @@
 		</div>
 	</section>
 
+	<!-- Pick date -->
+  <div id="offcanvas-date-1" uk-offcanvas class="m-offcanvas-date">
+    <div class="uk-offcanvas-bar">
+      <h4 class="uk-h4 uk-margin-remove-top uk-text-center">Chọn ngày sinh</h4>
+      <div id="datepicker" class="m-datepicker"></div>
+    </div>
+  </div>
+
 
 	<!-- Script -->
 	<script src="assets/vendor/jquery.min.js"></script>
 	<script src="assets/vendor/uikit/js/uikit.min.js"></script>
 	<script src="assets/vendor/uikit/js/uikit-icons.min.js"></script>
+	<script src="assets/vendor/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
 	<script src="assets/js/main.js"></script>
 </body>
 </html>
