@@ -40,6 +40,17 @@
               <button class="uk-button uk-button-small uk-button-default uk-width-1-3">Tìm kiếm</button>
             </div>
 					</div>
+
+					<div class="uk-padding-small">
+						<div class="uk-flex">
+							<div class="uk-width-1-3">Mã đơn hàng:</div>
+							<div class="uk-width-1-2 m-text-secondary m-text-bold">429834729</div>
+						</div>
+						<div class="uk-flex">
+							<div class="uk-width-1-3">Người liên hệ:</div>
+							<div class="uk-width-1-2 m-text-secondary m-text-bold">Lê Trọng Tuấn</div>
+						</div>
+					</div>
 				</article>
 				<!-- End .m-form-search -->
 			</div>
@@ -77,75 +88,130 @@
 			</aside>
 			<!-- End #mainSidebar -->
 
-			<section class="uk-padding-muted">
+			<section class="uk-padding-small">
 
-				<div class="uk-padding-small uk-margin-top">
-					<div class="uk-card-small uk-card-default uk-padding-small uk-margin-bottom">
-						<div class="uk-flex">
-							<div class="uk-width-1-2">
-								<label class="uk-form-label">Ngày đi</label>
-								<div class="uk-form-controls">
-								  <input class="uk-input m-select-datepicker" type="text" data-date="day-out" uk-toggle="target: #offcanvas-date-1">
-								</div>
-							</div>
-							<div class="uk-width-1-2 uk-margin-small-left" data-ref="to-date-search">
-								<label class="uk-form-label">Ngày về</label>
-								<div class="uk-form-controls">
-								  <input class="uk-input m-select-datepicker" type="text" data-date="day-on" uk-toggle="target: #offcanvas-date-2">
-								</div>
-							</div>
+				<ul class="uk-subnav uk-subnav-pill" uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
+			    <li><a href="#">Chiều đi</a></li>
+			    <li><a href="#">Chiều về</a></li>
+				</ul>
+
+				<ul class="uk-switcher" id="m-car-booking-switcher">
+					<li>
+						<div class="uk-card uk-card-small uk-card-default uk-card-body">
+							<ul class="uk-list">
+								<li>
+									<p class="m-text-bold">
+										<span class="m-icon-small uk-margin-small-right">
+											<img src="assets/images/plane.svg" alt="plane">
+										</span>
+										<span>
+											Hà Nội (HAN) <span uk-icon="icon: arrow-right"></span> Hồ Chí Minh (SGN)
+										</span></p>
+									<p>
+										<span class="m-icon-small uk-margin-small-right">
+											<img src="assets/images/clock.svg" alt="clock">
+										</span>
+										<span>
+											Thời gian: <span>02/02/2018</span>
+										</span>
+									</p>
+								</li>
+
+								<li class="uk-margin-top">
+									<p class="uk-margin-small-bottom uk-margin-top m-text-primary">Điểm tới: <span class="uk-text-bold">SB Nội Bài</span></p>
+									<div class="uk-flex uk-margin-bottom">
+										<div class="uk-width-1-2">
+											<label class="uk-margin-remove uk-text-small">Chọn tỉnh/thành phố:</label>
+											<select class="uk-select">
+												<option value="Hà Nội">Hà Nội</option>
+												<option value="Hà Nam">Hà Nam</option>
+												<option value="Bắc Giang">Bắc Giang</option>
+											</select>
+										</div>
+
+										<div class="uk-width-1-2 uk-margin-small-left">
+											<label class="uk-margin-remove uk-text-small">Chọn quận/huyện:</label>
+											<select class="uk-select">
+												<option value="Đống Đa">Đống Đa</option>
+												<option value="Cầu Giấy">Cầu Giấy</option>
+												<option value="Sóc Sơn">Sóc Sơn</option>
+											</select>
+										</div>
+									</div>
+									<div class="uk-flex uk-margin-bottom">
+										<div class="uk-width-1-2">
+											<label class="uk-margin-remove uk-text-small">Giờ đón:</label>
+											<input class="uk-input" type="text" value="08:00">
+										</div>
+
+										<div class="uk-width-1-2 uk-margin-small-left">
+											<label class="uk-margin-remove uk-text-small">Số điểm đón:</label>
+											<input class="uk-input" type="number" value="1">
+										</div>
+									</div>
+									<div class="uk-width-1-1 uk-margin-small">
+										<label class="uk-text-small">Ghi chú:</label>
+										<div class="uk-form-controls">
+											<textarea class="uk-textarea" rows="3"></textarea>
+										</div>
+									</div>
+									<p class="uk-text-right">Giá: <span class="m-text-bold uk-h4 m-text-secondary">300,000 VND</span></p>
+								</li>
+
+								<li class="uk-margin-top">
+									<p class="uk-margin-small-bottom uk-margin-top m-text-primary">Điểm đón: <span class="uk-text-bold">SB Tân Sơn Nhất</span></p>
+									<div class="uk-flex uk-margin-bottom">
+										<div class="uk-width-1-2">
+											<label class="uk-margin-remove uk-text-small">Chọn tỉnh/thành phố:</label>
+											<select class="uk-select">
+												<option value="Hà Nội">Hà Nội</option>
+												<option value="Hà Nam">Hà Nam</option>
+												<option value="Bắc Giang">Bắc Giang</option>
+											</select>
+										</div>
+
+										<div class="uk-width-1-2 uk-margin-small-left">
+											<label class="uk-margin-remove uk-text-small">Chọn quận/huyện:</label>
+											<select class="uk-select">
+												<option value="Đống Đa">Đống Đa</option>
+												<option value="Cầu Giấy">Cầu Giấy</option>
+												<option value="Sóc Sơn">Sóc Sơn</option>
+											</select>
+										</div>
+									</div>
+									<div class="uk-flex uk-margin-bottom">
+										<div class="uk-width-1-2">
+											<label class="uk-margin-remove uk-text-small">Giờ đón:</label>
+											<input class="uk-input" type="text" value="08:00">
+										</div>
+
+										<div class="uk-width-1-2 uk-margin-small-left">
+											<label class="uk-margin-remove uk-text-small">Số điểm trả:</label>
+											<input class="uk-input" type="number" value="1">
+										</div>
+									</div>
+									<div class="uk-width-1-1 uk-margin-small">
+										<label class="uk-text-small">Ghi chú:</label>
+										<div class="uk-form-controls">
+											<textarea class="uk-textarea" rows="3"></textarea>
+										</div>
+									</div>
+									<p class="uk-text-right">Giá: <span class="m-text-bold uk-h4 m-text-secondary">300,000 VND</span></p>
+								</li>
+							</ul>
 						</div>
-					</div>
-
-
-					<div class="uk-card-small uk-card-default uk-padding-small uk-margin-bottom">
-						<div class="uk-flex">
-							<label class="uk-form-label uk-flex uk-flex-middle uk-width-1-2">Hạng ghế</label>
-							<div class="uk-form-controls uk-width-1-2">
-							  <select class="uk-select">
-								<option>Phổ thông</option>
-								<option>Thương gia</option>
-							  </select>
-							</div>
-						</div>
-					</div>
-
-					<div class="uk-card-small uk-card-default uk-padding-small uk-margin-small-bottom">
-						<div class="uk-margin uk-flex">
-							<label class="uk-form-label uk-width-1-2">Người lớn</label>
-							<div>
-								<span class="m-input-number-decrement">–</span>
-								<input class="m-input-number" type="text" value="1" min="0" max="10">
-								<span class="m-input-number-increment">+</span>
-							</div>
-						</div>
-
-						<div class="uk-margin uk-flex">
-							<label class="uk-form-label uk-width-1-2">Trẻ em</label>
-							<div>
-								<span class="m-input-number-decrement">–</span>
-								<input class="m-input-number" type="text" value="0" min="0" max="10">
-								<span class="m-input-number-increment">+</span>
-							</div>
-						</div>
-
-						<div class="uk-flex">
-							<label class="uk-form-label uk-width-1-2">Em bé</label>
-							<div>
-								<span class="m-input-number-decrement">–</span>
-								<input class="m-input-number" type="text" value="0" min="0" max="10">
-								<span class="m-input-number-increment">+</span>
-							</div>
-						</div>
-
-					</div>
-
-					<div class="uk-padding-small uk-flex uk-flex-center">
-						<a class="uk-button m-button-secondary" href="form-result-one-way.html">Đặt xe</a>
-					</div>
-				</div>
+						<p class="uk-text-center">Tổng: <span class="uk-h3 uk-text-danger m-text-bold">600,000 VND</span></p>
+					</li>
+					<li>
+						2
+					</li>
+				</ul>
 
 			</section>
+
+			<div class="uk-padding uk-padding-remove-top uk-flex uk-flex-center">
+				<button class="uk-button m-button-secondary">Đặt xe</button>
+			</div>
 		</form>
 
 	</div>
