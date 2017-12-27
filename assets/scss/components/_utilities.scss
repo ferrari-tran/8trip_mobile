@@ -150,3 +150,33 @@
 .m-pl-15 {
 	padding-left: 15px !important;
 }
+
+// Card
+.m-card {
+	font-size: 0.8rem;
+
+	&.uk-card-small {
+		.uk-card-body {
+			padding: 0.8rem;
+		}
+		.uk-card-title {
+			margin-bottom: 0rem;
+			font-size: 0.9rem;
+		}
+		p {
+			margin-top: 0.5rem;
+		}
+		.uk-card-badge {
+			top: 0.8rem;
+			right: 0.8rem;
+		}
+	}
+}
+
+// Text
+.m-text-truncate-3 {
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+ 	-webkit-box-orient: vertical;
+ 	overflow: hidden;
+}
