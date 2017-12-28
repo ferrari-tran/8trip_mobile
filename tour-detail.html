@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=414, maximum-scale=1">
+	<title>Tour detail</title>
+
+	<!-- Framework UI Kit -->
+	<link rel="stylesheet" href="assets/vendor/uikit/css/uikit.min.css">
+	<link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body>
+
+	<div class="m-wrapper uk-offcanvas-content">
+		<form class="m-form">
+			<div class="m-bg-gradient-primary uk-light">
+				<nav class="uk-navbar-container uk-navbar-transparent uk-light" uk-navbar>
+					<div class="uk-navbar-left">
+						<a class="uk-icon-link" uk-icon="icon: arrow-left; ratio: 2" href="#"></a>
+					</div>
+
+					<div class="uk-navbar-center"><h4 class="m-title-page uk-text-truncate">Chi tiết tour</h4></div>
+
+					<div class="uk-navbar-right">
+						<a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-icon="ratio: 2"  uk-toggle="target: #mainSidebar"></a>
+					</div>
+				</nav>
+			</div>
+
+			<aside id="mainSidebar" uk-offcanvas="overlay: true; flip: true; mode: push;">
+				<div class="uk-offcanvas-bar">
+
+					<button class="uk-offcanvas-close" type="button" uk-close></button>
+
+					<ul class="uk-nav uk-nav-default uk-nav-parent-icon" uk-nav>
+						<li class="uk-nav-header m-text-primary">Header</li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: home"></span> Trang chủ</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: sign-in"></span> Đăng nhập</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: refresh"></span> Khôi phục đặt chỗ</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: commenting"></span> Hỗ trợ khách hàng</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: info"></span> Trợ giúp</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: world"></span> Quốc gia &amp; Ngôn ngữ</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: money"></span> Ngoại tệ</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: download"></span> Tải ứng dụng</a></li>
+
+						<li class="uk-nav-header m-text-primary">Dịch vụ</li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: tag"></span> Khuyến mãi</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: star"></span> Tour nổi bật</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: flight"></span> Vé máy bay</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: car"></span> Xe sân bay</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: bed"></span> Khách sạn</a></li>
+
+						<li class="uk-nav-divider uk-margin"></li>
+
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: info"></span> Về 8Trip</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: more"></span> Thông tin khác</a></li>
+				</ul>
+
+				</div>
+			</aside>
+			<!-- End #mainSidebar -->
+
+			<section class="uk-background-muted m-result-list">
+				<img src="assets/images/image.jpg" alt="img">
+				<div class="uk-padding-small uk-padding-remove-vertical">
+					<div class="uk-card uk-card-default uk-body uk-card-small uk-padding-small m-card-detail uk-margin">
+						<h3 class="uk-h3 m-text-bold">Tour tham quan Chiang Rai và Chùa Trắng Wat Rong Khun</h3>
+						<div class="uk-flex uk-flex-between uk-margin">
+							<div class="uk-text-small uk-text-muted uk-flex-center">
+								<div class="uk-flex uk-flex-middle uk-margin-small-bottom"><span uk-icon="icon: clock; ratio: 0.8" class="uk-margin-small-right"></span> 03:00</div>
+								<div class="uk-flex uk-flex-middle"><span uk-icon="icon: location; ratio: 0.8" class="uk-margin-small-right"></span> Hà Nội - Pataya</div>
+							</div>
+							<span class="uk-text-danger m-text-bold uk-h4 uk-margin-remove">5,000,000 VND</span>
+						</div>
+						<div class="uk-flex uk-flex-center">
+							<button class="uk-button m-button-secondary">Đặt tour</button>
+						</div>
+					</div>
+				</div>
+				<div class="uk-padding-small">
+					<ul class="uk-subnav uk-subnav-pill" uk-switcher="animation: uk-animation-slide-left-medium, uk-animation-slide-right-medium">
+						<li><a href="#">Hành trình</a></li>
+						<li><a href="#">Thông tin</a></li>
+					</ul>
+
+					<ul class="uk-switcher uk-text-justify" id="m-booking-switcher">
+						<li>
+							<p class="m-text-bold uk-text-primary">Điểm nổi bật</p>
+							<ul class="">
+								<li>Viếng thăm thành phố Chiang Rai, thành phố lâu đời cổ kính của Thái Lan.</li>
+								<li>Tham quan ngôi chùa Wat Rong Khun với màu trắng đặc trưng và lối kiến trúc lộng lẫy, vô cùng độc đáo.</li>
+								<li>Đặt chân đến khu vực Tam Giác Vàng nổi tiếng Đông Nam Á với đầy những câu chuyện huyền thoại bí ẩn xoay quanh.</li>
+								<li>Tìm hiểu về đời sống của các đồng bào dân tộc thiểu số ven biên giới Lào - Thái Lan.</li>
+							</ul>
+
+							<p class="m-text-bold uk-text-primary">Bạn được trải nghiệm những gì?</p>
+							<p class="uk-text-bold">1. Viếng thăm chùa Trắng Wat Rong Khun với nét đẹp cổ kính</p>
+							<p>
+								Hành trình khám phá thành phố Chiang Rai cổ kính bắt đầu với Wat Rong Khun, một trong những ngôi chùa độc đáo nhất tại Thái Lan. Ngôi chùa thu hút sự chú ý của du khách thập phương không chỉ bởi màu trắng tinh khôi mà còn bởi kiến trúc và những đường nét trang trí có một không hai. Bạn hãy sẵn sàng lạc bước vào thiên đường của ánh sáng, sự hướng thiện và những chi tiết chạm trổ tinh xảo trên các công trình như cầu Luân Hồi, cổng thiên đường và những hình ảnh trong chính điện của chùa Trắng Wat Rong Khun.
+							</p>
+						</li>
+
+						<li>
+							Thông tin
+						</li>
+					</ul>
+				</div>
+				<div class="uk-flex uk-flex-center uk-padding">
+					<button class="uk-button m-button-secondary">Đặt tour</button>
+				</div>
+
+			</section>
+		</form>
+
+	</div>
+
+	<!-- Script -->
+	<script src="assets/vendor/jquery.min.js"></script>
+	<script src="assets/vendor/uikit/js/uikit.min.js"></script>
+	<script src="assets/vendor/uikit/js/uikit-icons.min.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
