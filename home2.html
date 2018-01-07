@@ -17,7 +17,7 @@
 
 	<div class="m-wrapper">
 		<form class="m-form uk-background-muted">
-			<div class="m-bg-fly-to-sky">
+			<div class="m-bg-gradient-primary">
 				<nav class="uk-navbar-container uk-navbar-transparent uk-light" uk-navbar>
 					<div class="uk-navbar-left">
 						<a class="uk-icon-link" uk-icon="icon: arrow-left; ratio: 2" href="#"></a>
@@ -35,37 +35,91 @@
 				</nav>
 				<!-- End nav -->
 
-				<div class="m-bg-full-sticky uk-padding-small uk-flex uk-flex-middle uk-flex-center uk-light uk-flex-wrap">
-					<p class="uk-text-center uk-margin-large">Đôi 2-3 dòng giới thiệu về 8trip. Tốt nhất là để 3 dòng cho đẹp chứ 2 dòng nó hơi bị cụt.</p>
-
-	        <section class="uk-width-1-1">
-	          <ul class="m-list-heading uk-list">
-	          	<li><a href="form-search-ticket.html">Vé máy bay</a></li>
-	          	<li><a href="#">Khách sạn</a></li>
-	          	<li><a href="#">Xe sân bay</a></li>
-	          	<li><a href="form-booking-tour.html">Tour</a></li>
-	          </ul>
-	        </section>
-
-	        <main>
-	        	<article class="uk-card uk-card-body">
-		        	<p class="uk-text-center">
-		        		Hotline:<br>
-		        		<a href="tel:0909-475-688" class="uk-h2 m-text-secondary">0909 475 688</a>
-		        	</p>
-	        	</article>
-	        </main>
-
-	        <footer class="m-position-bottom uk-width-1-1">
-	        	<hr>
-          	<address>
-          		Địa chỉ: 567A Lạc Long Quân, Phường Xuân La, Quận Tây Hồ, TP.Hà Nội<br>
-          		Email: 8trip@ssmedia.vn
-          	</address>
-          </footer>
-        </div>
+				<div class="uk-padding-small uk-light uk-flex-wrap">
+					<div class="uk-margin-large-bottom uk-text-center">
+						<p>Đoạn này để giới thiệu.<br>Kích thước của banner là 384x216. Các ảnh bắt buộc phải có cùng kích thước để tránh bị cắt hình.</p>
+						<!-- <p class="uk-margin-remove">Hotline:</p>
+						<a href="tel:0909-475-688" class="uk-h2 m-text-secondary">0909 475 688</a> -->
+					</div>
+				</div>
 				
 			</div>
+
+			<main class="uk-padding-small">
+				<div class="m-t-060">
+					<article uk-slideshow="animation: push">
+
+					    <div class="uk-position-relative uk-visible-toggle uk-light uk-card uk-card-default">
+
+					        <ul class="uk-slideshow-items">
+					            <li>
+					                <img src="assets/images/banner1.png" alt="banner" uk-cover>
+					            </li>
+					            <li>
+					                <img src="assets/images/preview-1.jpg" alt="banner" uk-cover>
+					            </li>
+					        </ul>
+
+					        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+					        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+					    </div>
+
+					    <ul class="uk-dotnav uk-flex-center uk-margin">
+					        <li uk-slideshow-item="0"><a href="#">Item 1</a></li>
+					        <li uk-slideshow-item="1"><a href="#">Item 2</a></li>
+					    </ul>
+
+					</article>
+					
+					<div class="uk-flex uk-margin">
+						<a href="#" class="uk-card uk-card-small uk-card-body uk-card-default uk-width-1-2 uk-margin-right uk-text-center uk-card-hover">
+							<img src="assets/images/ic_plane_ticket.svg" alt="image" class="uk-responsive-width uk-margin-small" width="70"><br>
+							<span class="uk-text-bold">Vé máy bay</span>
+						</a>
+						<a href="#" class="uk-card uk-card-small uk-card-body uk-card-default uk-width-1-2 uk-text-center uk-card-hover">
+							<img src="assets/images/ic_hotel.svg" alt="image" class="uk-responsive-width uk-margin-small" width="70"><br>
+							<span class="uk-text-bold">Khách sạn</span>
+						</a>
+					</div>
+					<div class="uk-flex uk-margin">
+						<a href="#" class="uk-card uk-card-small uk-card-body uk-card-default uk-width-1-2 uk-margin-right uk-text-center uk-card-hover">
+							<img src="assets/images/ic_luggage.svg" alt="image" class="uk-responsive-width uk-margin-small" width="70"><br>
+							<span class="uk-text-bold">Đặt tour</span>
+						</a>
+						<a href="#" class="uk-card uk-card-small uk-card-body uk-card-default uk-width-1-2 uk-text-center uk-card-hover">
+							<img src="assets/images/ic_taxi.svg" alt="image" class="uk-responsive-width uk-margin-small" width="70"><br>
+							<span class="uk-text-bold">Xe sân bay</span>
+						</a>
+					</div>
+				</div>
+			</main>
+
+			<footer class="m-position-bottom uk-padding-small">
+				<div class="uk-text-center uk-text-muted uk-margin">
+					<span uk-icon="icon: location; ratio: 1.5" class="uk-margin-small"></span><br>
+					<span class="uk-h4">Liên hệ</span>
+				</div>
+				<address class="uk-margin-remove uk-text-center">
+					567A Lạc Long Quân, Phường Xuân La,<br>Quận Tây Hồ, TP.Hà Nội<br>
+					<a href="mailto:8trip@ssmedia.vn" class="uk-text-primary uk-text-bold">8trip@ssmedia.vn</a> - <a href="tel:0909-475-688" class="uk-text-primary uk-text-bold">0909 475 688</a>
+				</address>
+				
+				<!-- <table class="uk-table uk-table-small">
+					<tr>
+						<th class="uk-width-small"><span uk-icon="icon: location" class="uk-margin-small-right"></span>Địa chỉ:</th>
+						<td>567A Lạc Long Quân, Phường Xuân La, Quận Tây Hồ, TP.Hà Nội</td>
+					</tr>
+					<tr>
+						<th><span uk-icon="icon: mail" class="uk-margin-small-right"></span>Email:</th>
+						<td>8trip@ssmedia.vn</td>
+					</tr>
+					<tr>
+						<th><span uk-icon="icon: info" class="uk-margin-small-right"></span>Hotline:</th>
+						<td><a href="tel:0909-475-688" class="m-text-danger uk-text-bold">0909 475 688</a></td>
+					</tr>
+				</table> -->
+			</footer>
 
 			<aside id="mainSidebar" uk-offcanvas="overlay: true; flip: true; mode: push;">
 				<div class="uk-offcanvas-bar">
@@ -73,28 +127,28 @@
 					<button class="uk-offcanvas-close" type="button" uk-close></button>
 
 					<ul class="uk-nav uk-nav-default uk-nav-parent-icon" uk-nav>
-            <li class="uk-nav-header m-text-primary">Header</li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: home"></span> Trang chủ</a></li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: sign-in"></span> Đăng nhập</a></li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: refresh"></span> Khôi phục đặt chỗ</a></li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: commenting"></span> Hỗ trợ khách hàng</a></li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: info"></span> Trợ giúp</a></li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: world"></span> Quốc gia &amp; Ngôn ngữ</a></li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: money"></span> Ngoại tệ</a></li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: download"></span> Tải ứng dụng</a></li>
+						<li class="uk-nav-header m-text-primary">Header</li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: home"></span> Trang chủ</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: sign-in"></span> Đăng nhập</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: refresh"></span> Khôi phục đặt chỗ</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: commenting"></span> Hỗ trợ khách hàng</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: info"></span> Trợ giúp</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: world"></span> Quốc gia &amp; Ngôn ngữ</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: money"></span> Ngoại tệ</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: download"></span> Tải ứng dụng</a></li>
 
-            <li class="uk-nav-header m-text-primary">Dịch vụ</li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: tag"></span> Khuyến mãi</a></li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: star"></span> Tour nổi bật</a></li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: flight"></span> Vé máy bay</a></li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: car"></span> Xe sân bay</a></li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: bed"></span> Khách sạn</a></li>
+						<li class="uk-nav-header m-text-primary">Dịch vụ</li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: tag"></span> Khuyến mãi</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: star"></span> Tour nổi bật</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: flight"></span> Vé máy bay</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: car"></span> Xe sân bay</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: bed"></span> Khách sạn</a></li>
 
-            <li class="uk-nav-divider uk-margin"></li>
+						<li class="uk-nav-divider uk-margin"></li>
 
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: info"></span> Về 8Trip</a></li>
-            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: more"></span> Thông tin khác</a></li>
-        </ul>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: info"></span> Về 8Trip</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: more"></span> Thông tin khác</a></li>
+				</ul>
 
 				</div>
 			</aside>

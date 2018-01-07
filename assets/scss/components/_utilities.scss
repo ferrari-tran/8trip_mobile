@@ -6,6 +6,14 @@
 	margin-right: -10px;
 }
 
+a.uk-card {
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+	&:hover {
+		color: $primary-color;
+	}
+}
+
 // Background
 .m-bg-highlight-tb {
 	background: $primary-color;
@@ -149,6 +157,12 @@
 // Sizing
 .m-pl-15 {
 	padding-left: 15px !important;
+}
+.m-t-030 {
+	margin-top: -30px !important;
+}
+.m-t-060 {
+	margin-top: -60px !important;
 }
 
 // Card
