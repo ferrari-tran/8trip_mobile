@@ -58,5 +58,12 @@ form label {
 	width: 310px;
 }
 
+// Nav
+.uk-navbar-container {
+	.uk-navbar-right, .uk-navbar-left {
+		z-index: 1000;
+	}
+}
+
 
 

@@ -62,7 +62,29 @@
 			<!-- End #mainSidebar -->
 
 			<section class="uk-background-muted m-result-list">
-				<img src="assets/images/image.jpg" alt="img">
+				<article uk-slideshow="animation: push">
+
+				    <div class="uk-position-relative uk-visible-toggle uk-light uk-card uk-card-default">
+
+				        <ul class="uk-slideshow-items">
+				        	<li>
+				                <img src="assets/images/image.jpg" alt="banner" uk-cover>
+				            </li>
+				            <li>
+				                <img src="assets/images/banner1.png" alt="banner" uk-cover>
+				            </li>
+				            <li>
+				                <img src="assets/images/preview-1.jpg" alt="banner" uk-cover>
+				            </li>
+				        </ul>
+
+				        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+				        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+
+				    </div>
+
+				</article>
+
 				<div class="uk-padding-small uk-padding-remove-vertical">
 					<div class="uk-card uk-card-default uk-body uk-card-small uk-padding-small m-card-detail uk-margin">
 						<h3 class="uk-h3 m-text-bold">Tour tham quan Chiang Rai và Chùa Trắng Wat Rong Khun</h3>

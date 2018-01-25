@@ -63,3 +63,11 @@
 		cursor: pointer;
 	}
 }
+
+.m-list-thumb {
+	> li {
+		&:not(:last-child) {
+			margin-bottom: $normal-spacing;
+		}
+	}
+}

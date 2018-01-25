@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=414, maximum-scale=1">
+	<title>Bank</title>
+
+	<!-- Framework UI Kit -->
+	<link rel="stylesheet" href="assets/vendor/uikit/css/uikit.min.css">
+	<link rel="stylesheet" href="assets/vendor/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+	<link rel="stylesheet" href="assets/vendor/jquery-ui-1.12.1.custom/jquery-ui.structure.min.css">
+	<link rel="stylesheet" href="assets/vendor/jquery-ui-1.12.1.custom/jquery-ui.theme.min.css">
+	<link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body class="uk-offcanvas-content">
+
+	<div class="m-wrapper">
+		<form class="m-form uk-background-muted">
+			<div class="m-bg-gradient-primary">
+				<nav class="uk-navbar-container uk-navbar-transparent uk-light" uk-navbar>
+					<div class="uk-navbar-left">
+						<a class="uk-icon-link" uk-icon="icon: arrow-left; ratio: 2" href="#"></a>
+					</div>
+
+					<div class="uk-navbar-center uk-width-1-1"><h4 class="m-title-page uk-margin-auto-left uk-margin-auto-right">Thông tin chuyển khoản</h4></div>
+
+					<div class="uk-navbar-right">
+						<a class="uk-navbar-toggle" uk-navbar-toggle-icon uk-icon="ratio: 2"  uk-toggle="target: #mainSidebar"></a>
+					</div>
+				</nav>
+				<!-- End nav -->
+			</div>
+
+			<aside id="mainSidebar" uk-offcanvas="overlay: true; flip: true; mode: push;">
+				<div class="uk-offcanvas-bar">
+
+					<button class="uk-offcanvas-close" type="button" uk-close></button>
+
+					<ul class="uk-nav uk-nav-default uk-nav-parent-icon" uk-nav>
+						<li class="uk-nav-header m-text-primary">Header</li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: home"></span> Trang chủ</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: sign-in"></span> Đăng nhập</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: refresh"></span> Khôi phục đặt chỗ</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: commenting"></span> Hỗ trợ khách hàng</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: info"></span> Trợ giúp</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: world"></span> Quốc gia &amp; Ngôn ngữ</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: money"></span> Ngoại tệ</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: download"></span> Tải ứng dụng</a></li>
+
+						<li class="uk-nav-header m-text-primary">Dịch vụ</li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: tag"></span> Khuyến mãi</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: star"></span> Tour nổi bật</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: flight"></span> Vé máy bay</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: car"></span> Xe sân bay</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: bed"></span> Khách sạn</a></li>
+
+						<li class="uk-nav-divider uk-margin"></li>
+
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: info"></span> Về 8Trip</a></li>
+						<li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: more"></span> Thông tin khác</a></li>
+				</ul>
+
+				</div>
+			</aside>
+			<!-- End #mainSidebar -->
+
+			<!-- <section class="uk-padding-small">
+
+				<article>
+					<div class="uk-card uk-card-body uk-card-small uk-card-default uk-margin">
+						<article class="uk-flex uk-flex-middle">
+							<div><img src="http://8trip.thuytp.com/images/logo-bidv.png" alt="bank" width="100" height="auto"></div>
+							<div class="uk-margin-left">
+								<span class="m-text-bold">Ngân hàng đầu tư và phát triển - BIDV</span>
+							</div>
+						</article>
+						<hr>
+						<article>
+							<div class="uk-flex">
+								<div class="uk-width-1-3 uk-text-bold">Tên tài khoản:</div>
+								<div class="uk-width-2-3">Công Ty CP Truyền Thông Sông Sáng</div>
+							</div>
+							<div class="uk-flex">
+								<div class="uk-width-1-3 uk-text-bold">Số tài khoản:</div>
+								<div class="uk-width-2-3">4982940823402</div>
+							</div>
+							<div class="uk-flex">
+								<div class="uk-width-1-3 uk-text-bold">Chi nhánh:</div>
+								<div class="uk-width-2-3">Tây Hồ</div>
+							</div>
+						</article>
+					</div>
+					<div class="uk-card uk-card-body uk-card-small uk-card-default uk-margin">
+						<article class="uk-flex uk-flex-middle">
+							<div><img src="http://8trip.thuytp.com/images/logo-bidv.png" alt="bank" width="100" height="auto"></div>
+							<div class="uk-margin-left">
+								<span class="m-text-bold">Ngân hàng đầu tư và phát triển - BIDV</span>
+							</div>
+						</article>
+						<hr>
+						<article>
+							<div class="uk-flex">
+								<div class="uk-width-1-3 uk-text-bold">Tên tài khoản:</div>
+								<div class="uk-width-2-3">Công Ty CP Truyền Thông Sông Sáng</div>
+							</div>
+							<div class="uk-flex">
+								<div class="uk-width-1-3 uk-text-bold">Số tài khoản:</div>
+								<div class="uk-width-2-3">4982940823402</div>
+							</div>
+							<div class="uk-flex">
+								<div class="uk-width-1-3 uk-text-bold">Chi nhánh:</div>
+								<div class="uk-width-2-3">Tây Hồ</div>
+							</div>
+						</article>
+					</div>
+					<div class="uk-card uk-card-body uk-card-small uk-card-default uk-margin">
+						<article class="uk-flex uk-flex-middle">
+							<div><img src="http://8trip.thuytp.com/images/logo-bidv.png" alt="bank" width="100" height="auto"></div>
+							<div class="uk-margin-left">
+								<span class="m-text-bold">Ngân hàng đầu tư và phát triển - BIDV</span>
+							</div>
+						</article>
+						<hr>
+						<article>
+							<div class="uk-flex">
+								<div class="uk-width-1-3 uk-text-bold">Tên tài khoản:</div>
+								<div class="uk-width-2-3">Công Ty CP Truyền Thông Sông Sáng</div>
+							</div>
+							<div class="uk-flex">
+								<div class="uk-width-1-3 uk-text-bold">Số tài khoản:</div>
+								<div class="uk-width-2-3">4982940823402</div>
+							</div>
+							<div class="uk-flex">
+								<div class="uk-width-1-3 uk-text-bold">Chi nhánh:</div>
+								<div class="uk-width-2-3">Tây Hồ</div>
+							</div>
+						</article>
+					</div>
+				</article>
+
+			</section> -->
+
+			<section class="uk-padding-small">
+				<article>
+					<p>Xin vui lòng lựa chọn ngân hàng quý khách sử dụng để thanh toán.</p>
+					<div class="uk-card uk-card-small uk-card-body uk-card-default uk-margin">
+						<ul class="m-list-reset m-list-thumb uk-flex uk-flex-between uk-flex-wrap">
+						    <li><a href="#"><img src="http://8trip.thuytp.com/images/logo-bidv.png" alt="bank" width="90"></a></li>
+						    <li><a href="#"><img src="http://www.hsbc.com.vn/P2G_Themes_Skins/themes/html/hsbc_pws_home/images/logo.gif" alt="bank" width="90"></a></li>
+						    <li><a href="#"><img src="https://thebank.vn/images/bank/tienphongbank.jpg" alt="bank" width="90"></a></li>
+						    <li><a href="#"><img src="http://www.vpbank.com.vn/sites/default/files/logo.jpg" alt="bank" width="90"></a></li>
+						    <li><a href="#"><img src="https://www.gpbank.com.vn/images/news/d5ddafcd1ab140d1b7ba9d38b4cdb720.jpg" alt="bank" width="90"></a></li>
+						    <li><a href="#"><img src="http://pluspng.com/img-png/vietcombank-logo-png--574.jpg" alt="bank" width="90"></a></li>
+						</ul>
+					</div>
+				</article>
+			</section>
+		</form>
+
+	</div>
+
+	<!-- Pick date -->
+	<div id="offcanvas-date-1" uk-offcanvas class="m-offcanvas-date">
+		<div class="uk-offcanvas-bar">
+			<h4 class="uk-h4 uk-margin-remove-top uk-text-center">Chọn ngày đi</h4>
+			<div id="datepicker" class="m-datepicker"></div>
+		</div>
+	</div>
+
+
+	<!-- Script -->
+	<script src="assets/vendor/jquery.min.js"></script>
+	<script src="assets/vendor/uikit/js/uikit.min.js"></script>
+	<script src="assets/vendor/uikit/js/uikit-icons.min.js"></script>
+	<script src="assets/vendor/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+</html>
