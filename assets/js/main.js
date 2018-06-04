@@ -46,50 +46,28 @@ $(document).ready(function() {
 	});
 });
 
-// Customize input number
-(function() {
-	window.inputNumber = function(el) {
 
-		var min = el.attr('min') || false;
-		var max = el.attr('max') || false;
+$(document).on('click', '.m-input-number-increment', function(e) {
+    var $input = $(this).siblings('input'),
+        val = parseInt($input.val()),
+        max = parseInt($input.attr('max')),
+        step = parseInt($input.attr('step'));
 
-		var els = {};
+    var temp = val + step;
+    $input.val(temp <= max ? temp : max);
+    console.log(temp);
+});
 
-		els.dec = el.prev();
-		els.inc = el.next();
+$(document).on('click', '.m-input-number-decrement', function(e) {
+    var $input = $(this).siblings('input'),
+        val = parseInt($input.val()),
+        min = parseInt($input.attr('min')),
+        step = parseInt($input.attr('step'));
 
-		el.each(function() {
-			init($(this));
-		});
-
-		function init(el) {
-
-			els.dec.on('click', decrement);
-			els.inc.on('click', increment);
-
-			function decrement() {
-				var value = el[0].value;
-				value--;
-				if(!min || value >= min) {
-					el[0].value = value;
-				}
-			}
-
-			function increment() {
-				var value = el[0].value;
-				value++;
-				if(!max || value <= max) {
-					el[0].value = value++;
-				}
-			}
-		}
-	}
-})();
-
-$(document).ready(function() {
-	$('.m-input-number').each(function(index, input) {
-		inputNumber($(input));
-	});
+    var temp = val - step;
+    $input.val(temp >= min ? temp : min);
+  
+    console.log(temp);
 });
 
 // Toggle round trip in form
