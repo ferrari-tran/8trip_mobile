@@ -47,7 +47,7 @@ $(document).ready(function() {
 });
 
 
-$(document).on('click', '.m-input-number-increment', function(e) {
+$('.m-input-number-increment').click(function(e) {
     var $input = $(this).siblings('input'),
         val = parseInt($input.val()),
         max = parseInt($input.attr('max')),
@@ -58,7 +58,7 @@ $(document).on('click', '.m-input-number-increment', function(e) {
     console.log(temp);
 });
 
-$(document).on('click', '.m-input-number-decrement', function(e) {
+$('.m-input-number-decrement').click( function(e) {
     var $input = $(this).siblings('input'),
         val = parseInt($input.val()),
         min = parseInt($input.attr('min')),
