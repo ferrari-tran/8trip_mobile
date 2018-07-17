@@ -47,7 +47,7 @@ $(document).ready(function() {
 });
 
 
-$('.m-input-number-increment').bind('touchstart', function(e) {
+$('.m-input-number-increment').on('touchstart', function(e) {
     var $input = $(this).siblings('input'),
         val = parseInt($input.val()),
         max = parseInt($input.attr('max')),
@@ -58,7 +58,7 @@ $('.m-input-number-increment').bind('touchstart', function(e) {
     console.log(temp);
 });
 
-$('.m-input-number-decrement').bind('touchstart', function(e) {
+$('.m-input-number-decrement').on('touchstart', function(e) {
     var $input = $(this).siblings('input'),
         val = parseInt($input.val()),
         min = parseInt($input.attr('min')),
@@ -159,7 +159,6 @@ $(function() {
 	var input;
 	$('.m-select-datepicker').click(function(e) {
 		input = $(e.target);
-		console.log(input);
 		input.blur();
 	});
 
@@ -168,7 +167,7 @@ $(function() {
 		selectionDatepicker.map(function(index, sDatepicker) {
 			UIkit.util.on(sDatepicker, 'show', function(event, element) {
 				var dateToday = new Date();
-				var datepicker = $('.m-datepicker');
+				var datepicker = $('.m-datepicker:not(.m-datepicker-all)');
 
 				if (datepicker.length > 0 && typeof $.datepicker !== undefined) {
 					var dates = datepicker.datepicker({
@@ -182,6 +181,20 @@ $(function() {
 									dates.not(this).datepicker('option', option, date);
 							input.val(selectedDate);
 
+							var offCanvas = $(this).closest('[uk-offcanvas]');
+							UIkit.offcanvas(offCanvas).hide();
+						}
+					});
+				}
+
+				var datepickerAll = $('.m-datepicker-all');
+				if (datepickerAll.length > 0 && typeof $.datepickerAll !== undefined) {
+					var datesAll = datepickerAll.datepicker({
+						defaultDate: '+1w',
+						dateFormat: 'dd/mm/yy',
+						changeMonth: true,
+      			changeYear: true,
+						onSelect: function(selectedDate, self) {
 							var offCanvas = $(this).closest('[uk-offcanvas]');
 							UIkit.offcanvas(offCanvas).hide();
 						}

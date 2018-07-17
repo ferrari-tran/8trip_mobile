@@ -56,6 +56,11 @@ form label {
 // Off-canvas
 .uk-offcanvas-bar {
 	width: 310px;
+
+	@media (min-width: 960px) {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 }
 
 // Nav
