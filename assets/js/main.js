@@ -195,6 +195,7 @@ $(function() {
 						changeMonth: true,
       			changeYear: true,
 						onSelect: function(selectedDate, self) {
+							input.val(selectedDate);
 							var offCanvas = $(this).closest('[uk-offcanvas]');
 							UIkit.offcanvas(offCanvas).hide();
 						}
