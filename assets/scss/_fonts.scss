@@ -1,0 +1,5 @@
+// Roboto
+$link-font-roboto: '../fonts/Roboto/Roboto';
+@include font-face('Roboto', $link-font-roboto + '-Light', 300, lighter, ttf);
+@include font-face('Roboto', $link-font-roboto + '-Regular', 400, normal, ttf);
+@include font-face('Roboto', $link-font-roboto + '-Medium', 500, bolder, ttf);
